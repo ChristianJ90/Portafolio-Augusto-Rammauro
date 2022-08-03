@@ -54,7 +54,7 @@ h1,h2,h3 {
 /**** Utilidades ****/
 .titulos {
     color: var(--verde);
-    margin-top: 6rem;
+    margin: 7rem 0;
 }
 
 
@@ -130,6 +130,7 @@ header {
         opacity: 0;
         width: 5.7rem;
         height: 6.2rem;
+        margin-top: 4rem;
     }
     .navegacion__menu--link {
         display: block;
@@ -178,6 +179,12 @@ header {
         justify-content: center;
         margin-top: 20rem;
     }
+}
+@media (max-width: 1024px)  {
+    .navegacion__menu a{
+        font-size: 1.8rem;
+        margin-right: 2rem;
+     }
 }
 
 
@@ -319,4 +326,19 @@ margin-bottom: 4rem;
     color: var(--blanco);
 }
 
+
+/**** Publicaciones ****/
+.publicaciones {
+    display: flex;
+    justify-content: space-between;
+}
+.publicaciones__maradona {
+    flex: 0 0 calc(50% - 2rem);
+    text-align: center;
+}
+.publicaciones__texto {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.2rem;
+}
 
