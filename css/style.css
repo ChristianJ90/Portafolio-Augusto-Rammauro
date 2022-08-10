@@ -183,15 +183,35 @@ header {
 
 /**** Hero ****/
 .hero {
-    background-image: url(../img/hero.png);
+    
+    background: rgba(37, 37, 37, 0.927) url('../img/hero.png');
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 60rem;
     margin-bottom: 1.5rem;
 }
+.container__hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
 
-
+.titulos--agust{
+    color: var(--verde);
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.sub__titulo--agust{
+    color: var(--gris);
+    font-size: 4.8rem;
+    font-weight: 500;
+    margin-top: 0;
+}
 /**** Iconos ****/
 .iconos {
     display: flex;
@@ -302,6 +322,55 @@ margin-bottom: 4rem;
     display: flex;
 }
 
+/**** Proveedores *****/
+.container__proveedor{
+    max-width: 140rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.titulo__proveedor{
+    color: var(--gris);
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 8rem 0;
+}
+.marcas__provedor{
+    
+}
+.orden__marcas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    
+}
+.img__prov--3{
+    margin-right: 7rem;
+}
+
+/***** Sobre Mi ******/
+.titulo__sobremi{
+    margin: 13rem 0;
+}
+.sobremi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    
+}
+.parrafo__subtitulo-1{
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.parrafo-1{
+    font-size: 2.2rem;
+    color: var(--blanco);
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 4rem;
+}
 /**** Servicios ****/
 .servicios {
     display: grid;
@@ -319,4 +388,25 @@ margin-bottom: 4rem;
     color: var(--blanco);
 }
 
-
+/**** Publicaciones ****/
+.publicaciones{
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+    
+}
+.publicaciones__texto{
+    color: var(--gris);
+    font-family: var(--Font);
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-style: italic;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.art-publicaciones{
+    /* width: 50rem; */
+    flex: 1;
+    text-align: center;
+}
