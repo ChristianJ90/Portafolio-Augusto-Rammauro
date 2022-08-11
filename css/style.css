@@ -403,8 +403,6 @@ header {
 .container__proveedor{
     width: 100%;
     background-color: var(--negro);
-    max-width: 130rem;
-    width: 90%;
     margin: 0 auto;
 }
 .titulo__proveedor{
