@@ -189,7 +189,6 @@ header {
 
 /**** Hero ****/
 .hero {
-    
     background: rgba(37, 37, 37, 0.927) url('../img/hero.png');
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -404,6 +403,9 @@ header {
 .container__proveedor{
     width: 100%;
     background-color: var(--negro);
+    max-width: 130rem;
+    width: 90%;
+    margin: 0 auto;
 }
 .titulo__proveedor{
     color: var(--gris);
@@ -441,8 +443,31 @@ header {
     color: var(--blanco);
     font-weight: 400;
     line-height: 27px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
+.sobremi__expe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 10rem;
+}
+.subtitulo__expe{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--verde);
+    text-align: left;
+    margin-top: 0;
+}
+.sobremi__formacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    margin-top: 10rem;
+}
+.marginTop-6{
+    margin-top: 6rem;
+}
+
 
 /**** Servicios ****/
 .servicios {
