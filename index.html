@@ -67,9 +67,6 @@
             <a href="https://twitter.com/AugustoRammauro" target="_blank"  class="icon icon--twitter">
                 <i class="ri-twitter-line"></i>
             </a>
-            <a href="https://www.instagram.com/augustorammauro" target="_blank"  class="icon icon--instagram">
-              <i class="ri-instagram-line"></i>
-            </a>
             <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
               <i class="ri-mail-line"></i>
             </a>
@@ -77,83 +74,236 @@
     </section>
 
     <main>
-        <h1 id="productos" class="titulos">Productos</h1>
+        <h1 class="titulos">Trabajos Realizados</h1>
         <div  class="productos">
             <aside class="productos__aside">
+                <h2 class="productos__aside--titulo">Power BI</h2>
                 <div class="productos__aside--card productos__aside--powerBi">
                     <img src="./img/Power BI1.png" alt="img Power bi">
-                    <h2 class="productos__aside--titulo">Power bi</h2>
+                    <p class="productos__aside--texto">Reportes  interactivos y automatizados</p>
+                    
                 </div>
                 <div class="productos__aside--card productos__aside--tableau">
-                    <img src="./img/Tableau.png" alt="img Tableau">
                     <h2 class="productos__aside--titulo">Tableau</h2>
+                    <img src="./img/Tableau.png" alt="img Tableau">
+                    <p class="productos__aside--texto">Dashboards  interactivos y automatizados
+                    </p>
+                    
                 </div>
                 <div class="productos__aside--card productos__aside--python">
-                    <img src="./img/Python.png" alt="img Python">
                     <h2 class="productos__aside--titulo">Python</h2>
+                    <img src="./img/Python.png" alt="img Python">
+                    <p class="productos__aside--texto">Procesamiento y visualización de datos, programación</p>
+                    
                 </div>
             </aside >
-
-            <section class="productos__img">
-                <div class="productos__img1">
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <!--<article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>-->
+    
+            <div>
+                <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
                 </div>
-
-                <div class="productos__img2">
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>
-                    <!--<article class="productos__img--article">
-                        <img src="https://via.placeholder.com/260" alt="">
-                    </article>-->
+    
+            <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
                 </div>
-
-                <div class="productos__img3">
-                    <article class="productos__img--article">
-                        <img src="./img/FBD Pizza Plot 2.png" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="./img/FBD Radar.png" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="./img/FBD Beeswarm progresión.png" alt="">
-                    </article>
-                    <article class="productos__img--article">
-                        <img src="./img/FBD Tiled Shot Maps.png" alt="">
-                    </article>
-                     <!--<article class="productos__img--article">
-                        <img src="https://picsum.photos/260" alt="">
-                    </article>--> 
-                </div>
-            </section>
-        </div>
-    </main>
+                <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
+                </div> 
+                </div>              
+            </div>
+        </main>
 
     <section class="container__proveedor">
-        <h1 class="titulo__proveedor">Proveedores con los que he trabajado</h1>
+        <h1 class="titulo__proveedor titulos">Proveedores con los que he trabajado</h1>
         <div class="marcas__provedor">
             <div class="orden__marcas">
                 <img src="img/provedor-1.png" alt="prov-1">
@@ -172,7 +322,7 @@
         </div>
     </section>
 
-    <section class="container__proveedor">
+    <section class="container__sobre mi">
         <h1 id="sobremi" class="titulos titulo__sobremi">Sobre mi</h1>
         <div class="sobremi">
             <div class="contenido__sobre mi">
@@ -280,9 +430,9 @@
         </div>
     </section>
 
-    <section>
+    <section class="servicios">
         <h1 id="servicios" class="titulos">Servicios</h1>
-        <div  class="servicios">
+        <div  class="servicios__article">
             <article>
                 <p class="servicios__titulo">Scouting técnico</p>
                 <p class="servicios__texto">Análisis y <br> seguimiento de <br> jugadores</p>
@@ -320,9 +470,6 @@
             </article>
         </div>
     </section>
-
-    <!-- <section>
-        <h1 id="sobre mi" class="titulos">Sobre mi</h1>
-    </section> -->
+    <script defer src="main.js"></script>
 </body>
 </html>
