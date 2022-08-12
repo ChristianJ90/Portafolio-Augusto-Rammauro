@@ -57,7 +57,11 @@ h1,h2,h3 {
     color: var(--gris);
     padding: 4rem;
 }
-
+.container{
+    max-width: 130rem;
+    width: 90%;
+    margin: 0 auto;
+}
 
 /**** Navegacion ****/
 header {
@@ -79,13 +83,14 @@ header {
     color: var(--blanco);
     font-size: 2.3rem;
     font-weight: 700;
-    margin-right: 5rem;
+    margin-right: 6rem;
  }
     /**** Boton de Idioma ****/
 .navegacion__idioma {
     display: flex;
     justify-content: end;
-    max-width: 10rem;
+    /* max-width: 10rem; */
+    margin-bottom: 1rem;
     height: 3rem;
 }
 .navegacion__idioma--es {
@@ -102,7 +107,12 @@ header {
     font-weight: 700;
     border: solid 0.1rem transparent;
     color: var(--negro);
-    padding: 0.5rem 1rem;
+    width: 59px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0.5rem 1rem; */
 }
 .navegacion__idioma--a:hover {
     background-color: var(--verde);
@@ -189,19 +199,20 @@ header {
 
 /**** Hero ****/
 .hero {
-    background: rgba(37, 37, 37, 0.927) url('../img/hero.png');
-    background-blend-mode: darken;
+    /* background: rgba(37, 37, 37, 0.927) url('../img/hero.png');
+    background-blend-mode: darken; */
+    background-image: url('/img/hero-25.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 60rem;
+    height: 56.6rem;
     margin-bottom: 1.5rem;
 }
 .container__hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 10rem;
     height: 100%;
 }
 
@@ -218,13 +229,18 @@ header {
     margin-top: 0;
 }
 
+.img__augusto{
+    width: 346px;
+    height: 346px;
+}
 
 /**** Iconos ****/
 .iconos {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
 }
 .icons {
     display: grid;
@@ -286,6 +302,12 @@ header {
 
 
 /**** Productos ****/
+.titulos__productos{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--verde);
+    margin: 5rem 0;
+}
 .productos {
     display: flex;
     width: 100%;
@@ -403,7 +425,7 @@ header {
 .container__proveedor{
     width: 100%;
     background-color: var(--negro);
-    margin: 0 auto;
+    padding-bottom: 8rem;
 }
 .titulo__proveedor{
     color: var(--gris);
@@ -417,13 +439,17 @@ header {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     margin-top: 3.5rem;
-    padding: 2rem  3rem 2rem 5rem;
 }
-
+.img__prov--3{
+    margin-right: 4rem;
+}
 
 /***** Sobre Mi ******/
 .titulo__sobremi{
-    margin: 13rem 0;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--verde);
+    margin: 8rem 0 5rem 0;
 }
 .sobremi{
     display: grid;
@@ -447,7 +473,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 .subtitulo__expe{
     font-size: 3.6rem;
@@ -461,7 +487,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
-    margin-top: 10rem;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
 }
 .marginTop-6{
     margin-top: 6rem;
@@ -471,6 +498,12 @@ header {
 /**** Servicios ****/
 .servicios {
     background-color: var(--negro);
+}
+.titulos__servicio{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--verde);
+    padding: 5rem 0 3rem 0;
 }
 .servicios__article {
     display: grid;
