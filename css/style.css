@@ -391,6 +391,7 @@ margin-bottom: 4rem;
     color: var(--verde);
     text-align: left;
     margin-top: 0;
+    font-variant: small-caps;
 }
 .sobremi__formacion{
     display: grid;
