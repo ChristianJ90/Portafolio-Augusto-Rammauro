@@ -498,30 +498,72 @@ header {
 /**** Servicios ****/
 .servicios {
     background-color: var(--negro);
+    padding: 3rem 0;
+    padding-bottom: 5rem;
 }
 .titulos__servicio{
     font-size: 3.6rem;
     font-weight: 700;
     color: var(--verde);
-    padding: 5rem 0 3rem 0;
+    /* padding: 5rem 0 3rem 0; */
 }
 .servicios__article {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 0 6rem 3rem;
+    justify-items: center;
+    /* padding: 0 6rem 3rem; */
 }
 .servicios p{
     text-align: center;
     font-size: 2.2rem; 
 }
+.ancho__article{
+    width: 80%;
+}
 .servicios__titulo {
     color: var(--verde);
+    font-weight: 700;
+    font-size: 2.4rem;
 }
 .servicios__texto {
     color: var(--blanco);
 }
 
+/*  CONTACTANOS  */
 
+.contactanos{
+    width: 100%;
+    background: var(--gris);
+    padding: 4rem 0;
+}
+.titulos__contacto{
+    color: var(--oscuro);
+    font-weight: 700;
+    font-size: 3.6rem;
+    text-align: center;
+}
+.texto__contacto{
+    color: var(--oscuro);
+    font-weight: 400;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.contacto__calendly{
+    margin: -3rem 0rem;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv{
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+}
+.calendly{
+    min-width: 320px;
+    height: 680px;
+}
+/* .lmtWIHO_gkbTeeyuvoJC{
+    min-height: unset !important;
+} */
 /**** Publicaciones ****/
 .publicaciones {
     display: flex;
@@ -545,4 +587,18 @@ header {
     max-height: 26rem;
 }
 
+/* Footer  */
+.footer{
+    margin-top: 15rem;
+}
+.footer__titulo{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--gris);
+}
+.btn__vector{
+    position: absolute;
+    right: 10%;
+    
+}
 
