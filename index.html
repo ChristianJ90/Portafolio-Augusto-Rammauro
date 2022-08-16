@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header">  
+    <header class="header" id="inicio">  
         <div  class="navegacion">     
             <input class="navegacion__hamburguesa" type="checkbox">
             <i class="fas fa-times"></i>
@@ -27,12 +27,12 @@
                 <i class="fas fa-bars"></i>              
             </label>
             <nav class="navegacion__menu">
-                <a class="navegacion__menu--link active" href="#">Inicio</a>
-                <a class="navegacion__menu--link" href="#productos">Trabajos</a>
-                <a class="navegacion__menu--link" href="#servicios">Sobre mí</a>
-                <a class="navegacion__menu--link" href="#publicaciones">Servicios</a>
-                <a class="navegacion__menu--link" href="#sobre mi">Contacto</a>
-                <a class="navegacion__menu--link" href="#">Publicaciones</a>
+                <a class="navegacion__menu--link active" href="#inicio">Inicio</a>
+                <a class="navegacion__menu--link" href="#trabajos">Trabajos</a>
+                <a class="navegacion__menu--link" href="#sobremi">Sobre mí</a>
+                <a class="navegacion__menu--link" href="#servicios">Servicios</a>
+                <a class="navegacion__menu--link" href="#contactanos">Contacto</a>
+                <a class="navegacion__menu--link" href="#publicaciones">Publicaciones</a>
             </nav>
         </div> 
         <div class="navegacion__idioma">
@@ -74,7 +74,7 @@
     </section>
 
     <main>
-        <h1 class="titulos__productos">Trabajos Realizados</h1>
+        <h1 id="trabajos" class="titulos__productos">Trabajos Realizados</h1>
         <div  class="productos">
             <aside class="productos__aside">
                 <h2 class="productos__aside--titulo">Power BI</h2>
@@ -307,18 +307,18 @@
             <h1 class="titulo__proveedor titulos">Proveedores con los que he trabajado</h1>
             <div class="marcas__provedor">
                 <div class="orden__marcas">
-                    <img src="img/provedor-1.png" alt="prov-1">
-                    <img src="img/provedor-2.png" alt="prov-2">
-                    <img class="img__prov--3" src="img/provedor-3.png" alt="prov-3">
-                    <img src="img/provedor-4.png" alt="prov-4">
-                    <img src="img/provedor-5.png" alt="prov-5">
+                    <img class="img__provedor" src="img/provedor-1.png" alt="prov-1">
+                    <img class="img__provedor" src="img/provedor-2.png" alt="prov-2">
+                    <img class="img__provedor" class="img__prov--3 img__provedor" src="img/provedor-3.png" alt="prov-3">
+                    <img class="img__provedor" src="img/provedor-4.png" alt="prov-4">
+                    <img class="img__provedor" src="img/provedor-5.png" alt="prov-5">
                 </div>
                 <div class="orden__marcas">
-                    <img src="img/provedor-6.png" alt="prov-6">
-                    <img src="img/provedor-7.png" alt="prov-7">
-                    <img src="img/provedor-8.png" alt="prov-8">
-                    <img src="img/provedor-9.png" alt="prov-9">
-                    <img src="img/provedor-10.png" alt="prov-10">
+                    <img class="img__provedor" src="img/provedor-6.png" alt="prov-6">
+                    <img class="img__provedor" src="img/provedor-7.png" alt="prov-7">
+                    <img class="img__provedor" src="img/provedor-8.png" alt="prov-8">
+                    <img class="img__provedor" src="img/provedor-9.png" alt="prov-9">
+                    <img class="img__provedor" src="img/provedor-10.png" alt="prov-10">
                 </div>
             </div>
         </div>
@@ -334,10 +334,14 @@
                     <p class="parrafo-1"><span class="parrafo__subtitulo-1">Genero índices de rendimiento</span>, que resumen un amplio espectro de datos en un número del 1 al 10. La ponderación de las estadísticas se adapta a las necesidades del cliente. Los índices pueden ser generales, agrupados en categorías (ataque, defensa, creación, etc.) o ajustados por posición/rol.</p>
                     <p class="parrafo-1"><span class="parrafo__subtitulo-1">Brindo asesoramiento personalizado</span> a clubes, federaciones y agencias para desarrollar o mejorar el uso de datos para el análisis y la toma de decisiones. Capacidad de generar un impacto desde cero y con recursos limitados</p>
                 </div>
-                <img src="img/sobremi-1.png" alt="sobremi-1">
+                <div class="img__center">
+                    <img class="img__sobremi-1" src="img/sobremi-1.png" alt="sobremi-1">
+                </div>
             </div>
             <div class="sobremi__expe">
-                <img src="img/sobremi-2.png" alt="sobremi-2">
+                <div class="img__center">
+                    <img class="img__sobremi-2" src="img/sobremi-2.png" alt="sobremi-2">
+                </div>
                 <div>
                     <h2 class="subtitulo__expe">experiencia</h2>
                     <p class="parrafo-1">
@@ -429,7 +433,9 @@
                         <span class="parrafo__subtitulo-1">Portugués Nivel 5 (intermedio-avanzado) </span>|  Instituto Cultural Uruguayo Brasileño<br/>
                     </p>
                 </div>
-                <img src="img/sobremi-3.png" alt="sobremi-3">
+                <div class="img__center">
+                    <img class="img__sobremi-3" src="img/sobremi-3.png" alt="sobremi-3">
+                </div>
             </div>
         </div>
     </section>
@@ -474,23 +480,24 @@
 
 
     <section>
-        <h1 id="publicaciones" class="titulos">Publicaciones</h1>
+        <h1 id="publicaciones" class="titulos titulo__publicacion">Publicaciones</h1>
         <div class="publicaciones">
             <article class="publicaciones__maradona">
-                <img src="img/publi-1.png" alt="Imagen Maradona">
-                <p class="publicaciones__texto">Maradona: A Legend s World Cup <br> Exploits in Numbers</p>
+                <img class="img_publi-1" src="img/publi-1.png" alt="Imagen Maradona">
+                <p class="publicaciones__texto">Maradona: las hazañas de una leyenda de la Copa del Mundo</p>
             </article>
             <article class="publicaciones__maradona">
-                <img src="img/publi-2.png" alt="Imagen Sudamericanos">
-                <p class="publicaciones__texto">SUDAMERICANOS MIRANDO HACIA EUROPA: <br> LAS ESTRELLAS 
-                    JÓVENES QUE ENCIENDEN EL <br> FÚTBOL BRASILEÑO</p>
+                <img class="img_publi-2" src="img/publi-2.png" alt="Imagen Sudamericanos">
+                <p class="publicaciones__texto">Sudamericanos mirando hacia Europa: las jóvenes estrellas que encienden el fútbol brasileño</p>
             </article>
         </div>
     </section>
 
     <footer class="footer">
         <h1 class="footer__titulo">También puedes encontrarme en:</h1>
-        <img class="btn__vector" src="img/Vector.png" alt="vector">
+        <a href="#inicio">
+            <img class="btn__vector" src="img/Vector.png" alt="vector">
+        </a>
         <div class="iconos">
             <div class="icons">
                 <a href="https://wa.me/59899045771?text= %20" target="_blank"  class="icon icon--whatsapp">
@@ -510,8 +517,8 @@
                 </a>
             </div>
         </div>
-        <div>
-            <h1>PASIÓN POR EL FÚTBOL, PASIÓN POR LOS DATOS</h1>
+        <div class="fondo__footer">
+            <h1 class="texto__footer">PASIÓN POR EL FÚTBOL, PASIÓN POR LOS DATOS</h1>
         </div>
     </footer>
     <script defer src="main.js"></script>
