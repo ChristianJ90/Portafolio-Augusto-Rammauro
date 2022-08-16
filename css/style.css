@@ -73,8 +73,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 5rem 10rem;
-    height: 9rem;
-    /* position: fixed; */
+    height: 8rem;
 }
 .navegacion__menu .active{
     color: var(--verde);
@@ -129,6 +128,7 @@ header {
 @media (max-width: 769px)  {
     header{
         height: 9rem;
+        position: relative;
     }
     .navegacion__menu {
         display: block;
