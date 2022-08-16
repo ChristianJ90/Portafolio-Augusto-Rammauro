@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>  
+    <header class="header" id="inicio">  
         <div  class="navegacion">     
             <input class="navegacion__hamburguesa" type="checkbox">
             <i class="fas fa-times"></i>
@@ -26,17 +26,17 @@
                 <i class="fas fa-bars"></i>              
             </label>
             <nav class="navegacion__menu">
-                    <a class="navegacion__menu--link active" href="#">Home</a>
-                    <a class="navegacion__menu--link" href="#">Products</a>
-                    <a class="navegacion__menu--link" href="#">Services</a>
-                    <a class="navegacion__menu--link" href="#">Publications</a>
-                    <a class="navegacion__menu--link aboutMe" href="#sobre mi">About me</a>
-                    <a class="navegacion__menu--link" href="#">Contact</a>
-             </nav>
+                <a class="navegacion__menu--link active" href="#inicio">Home</a>
+                <a class="navegacion__menu--link" href="#trabajos">Work </a>
+                <a class="navegacion__menu--link" href="#sobremi">About me </a>
+                <a class="navegacion__menu--link" href="#servicios">Services</a>
+                <a class="navegacion__menu--link" href="#contactanos">Contact</a>
+                <a class="navegacion__menu--link" href="#publicaciones">Publications</a>
+            </nav>
         </div> 
         <div class="navegacion__idioma">
-            <a class="navegacion__idioma--a navegacion__idioma--es" href="#">EN</a>
-            <a class="navegacion__idioma--a navegacion__idioma--en" href="./index.html">ES</a>
+            <a class="navegacion__idioma--a navegacion__idioma--es" href="#">ENG</a>
+            <a class="navegacion__idioma--a navegacion__idioma--en" href="./index.html">ESP</a>
         </div>
     </header>
 
@@ -44,7 +44,7 @@
         <div class="container__hero">
             <div class="hero__titulo">
                 <h1 class="titulos--agust">Augusto Rammuro</h1>
-                <h3 class="sub__titulo--agust">Analista de fútbol</h3>
+                <h3 class="sub__titulo--agust">-FOOTBALL ANALYST-</h3>
             </div>
             <div class="hero__imagen">
                 <img class="img__augusto" src="img/Foto_Augusto.png" alt="foto-augusto">
@@ -57,327 +57,460 @@
             <a href="https://wa.me/59899045771?text= %20" target="_blank"  class="icon icon--whatsapp">
                 <i class="ri-whatsapp-line"></i>
             </a>
-
-            <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
-                <i class="ri-mail-line"></i>
-            </a>
-
             <a href="https://www.linkedin.com/in/augusto-rammauro" target="_blank"  class="icon icon--linkedin">
                 <i class="ri-linkedin-line"></i>
             </a>
-
             <a href="https://medium.com/@augustorammauro" target="_blank"  class="icon icon--medium">
                 <i class="ri-medium-line"></i>
             </a>
-
             <a href="https://twitter.com/AugustoRammauro" target="_blank"  class="icon icon--twitter">
                 <i class="ri-twitter-line"></i>
             </a>
-
+            <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
+              <i class="ri-mail-line"></i>
+            </a>
           </div>
     </section>
 
     <main>
-        <h1 class="titulos">Trabajos Realizados</h1>
+        <h1 id="trabajos" class="titulos__productos">WORK I&#39;VE DONE</h1>
         <div  class="productos">
             <aside class="productos__aside">
                 <h2 class="productos__aside--titulo">Power BI</h2>
                 <div class="productos__aside--card productos__aside--powerBi">
                     <img src="./img/Power BI1.png" alt="img Power bi">
-                    <p class="productos__aside--texto">Reportes  interactivos y automatizados</p>
+                    <p class="productos__aside--texto">Interactive and automated reports</p>
                     
                 </div>
                 <div class="productos__aside--card productos__aside--tableau">
                     <h2 class="productos__aside--titulo">Tableau</h2>
                     <img src="./img/Tableau.png" alt="img Tableau">
-                    <p class="productos__aside--texto">Dashboards  interactivos y automatizados
-                    </p>
+                    <p class="productos__aside--texto">Interactive and automated dashboards</p>
                     
                 </div>
                 <div class="productos__aside--card productos__aside--python">
                     <h2 class="productos__aside--titulo">Python</h2>
                     <img src="./img/Python.png" alt="img Python">
-                    <p class="productos__aside--texto">Procesamiento y visualización de datos, programación</p>
+                    <p class="productos__aside--texto">Data processing and visualization, programming</p>
                     
                 </div>
-            </aside>
-            <div>
-            <div class="Carousel">
-                <div class="slick-list" id="slick-list">
-                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-                    </button>
-                    <div class="slick-track" id="track">
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-                    </button>
-                </div>
-            </div>
-
-        <div class="Carousel">
-                <div class="slick-list" id="slick-list">
-                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-                    </button>
-                    <div class="slick-track" id="track">
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-                    </button>
-                </div>
-            </div>
-            <div class="Carousel">
-                <div class="slick-list" id="slick-list">
-                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-                    </button>
-                    <div class="slick-track" id="track">
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-                                    <picture>
-                                        <img src="https://via.placeholder.com/260" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-                    </button>
-                </div>
-            </div> 
-            </div>              
-        </div>
-    </main>
+            </aside >
     
-    <section class="container__proveedor">
-        <h1 class="titulo__proveedor titulos">Proveedores con los que he trabajado</h1>
-        <div class="marcas__provedor">
-            <div class="orden__marcas">
-                <img src="img/provedor-1.png" alt="prov-1">
-                <img src="img/provedor-2.png" alt="prov-2">
-                <img class="img__prov--3" src="img/provedor-3.png" alt="prov-3">
-                <img src="img/provedor-4.png" alt="prov-4">
-                <img src="img/provedor-5.png" alt="prov-5">
+            <div>
+                <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <iframe title="Uruguay Team Rankings" src="https://app.powerbi.com/reportEmbed?reportId=6e85633f-99cd-4dcd-b31d-e78666b6e0f9&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <iframe title="LaLiga 2020-21"src="https://app.powerbi.com/reportEmbed?reportId=2e3fff62-cd9c-4772-8054-ce5a427724cd&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" ></iframe>
+                                       <!-- <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>-->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <iframe title="River - GPS colectivo" src="https://app.powerbi.com/reportEmbed?reportId=415701f2-8885-42da-ad76-3c86554b85df&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="https://via.placeholder.com/260" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+    
+            <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <div class='tableauPlaceholder' id='viz1658853434954' style='position: relative'><noscript><a href='#'><img alt='Los Angeles Lakers - NBA champions 2008-09 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;L_&#47;L_A_Lakers2008-09-FBD&#47;Lakers2008-09Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='L_A_Lakers2008-09-FBD&#47;Lakers2008-09Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;L_&#47;L_A_Lakers2008-09-FBD&#47;Lakers2008-09Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853434954');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <div class='tableauPlaceholder' id='viz1658853409758' style='position: relative'><noscript><a href='#'><img alt='MATCH STATS - PREMIER LEAGUE 2020&#47;21 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MatchStats-FBD&#47;StatsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MatchStats-FBD&#47;StatsDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MatchStats-FBD&#47;StatsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853409758');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1250px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1250px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1677px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <div class='tableauPlaceholder' id='viz1658853400502' style='position: relative'><noscript><a href='#'><img alt='PASS DASHBOARD - AWAY TEAM ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PassMapsAway-FBD&#47;DashboardAway&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PassMapsAway-FBD&#47;DashboardAway' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PassMapsAway-FBD&#47;DashboardAway&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853400502');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <div class='tableauPlaceholder' id='viz1658853364014' style='position: relative'><noscript><a href='#'><img alt='PASS DASHBOARD - HOME TEAM ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PassMapsHome-FBD&#47;DashboardHome&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PassMapsHome-FBD&#47;DashboardHome' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PassMapsHome-FBD&#47;DashboardHome&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853364014');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <div class='tableauPlaceholder' id='viz1658853156810' style='position: relative'><noscript><a href='#'><img alt='EMANUEL BELTRÁN - Comparación con laterales del Campeonato Uruguayo 2021 (+500 minutos jugados) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pl&#47;PlayerBars-FBD&#47;PlayerBarsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PlayerBars-FBD&#47;PlayerBarsDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pl&#47;PlayerBars-FBD&#47;PlayerBarsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853156810');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1250px';vizElement.style.height='777px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1250px';vizElement.style.height='777px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="<div class='tableauPlaceholder' id='viz1658853329726' style='position: relative'><noscript><a href='#'><img alt='SHOT MAPS &amp; xG TIMELINE ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;ShotMaps-FBD&#47;ShotDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ShotMaps-FBD&#47;ShotDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;ShotMaps-FBD&#47;ShotDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658853329726');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1527px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="Carousel">
+                    <div class="slick-list" id="slick-list">
+                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                        </button>
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                            <img src="./img/FBD Pizza Plot 2.png" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                            <img src="./img/FBD Pizza Plot colores.png" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="./img/FBD Radar.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                            <img src="./img/FBD Beeswarm progresión.png" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                            <img src="./img/FBD Tiled Shot Maps.png" alt="Image">                                       
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                            <img src="./img/FBD xG Rolling Plots.png" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </button>
+                    </div>
+                </div> 
+                </div>              
             </div>
-            <div class="orden__marcas">
-                <img src="img/provedor-6.png" alt="prov-6">
-                <img src="img/provedor-7.png" alt="prov-7">
-                <img src="img/provedor-8.png" alt="prov-8">
-                <img src="img/provedor-9.png" alt="prov-9">
-                <img src="img/provedor-10.png" alt="prov-10">
+        </main>
+
+    <section class="container__proveedor">
+        <div class="container">
+            <h1 class="titulo__proveedor titulos">PROVIDERS I&#39;VE WORKED WITH</h1>
+            <div class="marcas__provedor">
+                <div class="orden__marcas">
+                    <img class="img__provedor" src="img/provedor-1.png" alt="prov-1">
+                    <img class="img__provedor" src="img/provedor-2.png" alt="prov-2">
+                    <img class="img__provedor" class="img__prov--3 img__provedor" src="img/provedor-3.png" alt="prov-3">
+                    <img class="img__provedor" src="img/provedor-4.png" alt="prov-4">
+                    <img class="img__provedor" src="img/provedor-5.png" alt="prov-5">
+                </div>
+                <div class="orden__marcas">
+                    <img class="img__provedor" src="img/provedor-6.png" alt="prov-6">
+                    <img class="img__provedor" src="img/provedor-7.png" alt="prov-7">
+                    <img class="img__provedor" src="img/provedor-8.png" alt="prov-8">
+                    <img class="img__provedor" src="img/provedor-9.png" alt="prov-9">
+                    <img class="img__provedor" src="img/provedor-10.png" alt="prov-10">
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container__sobre mi">
-        <h1 id="sobremi" class="titulos titulo__sobremi">Sobre mi</h1>
-        <div class="sobremi">
-            <div class="contenido__sobre mi">
-                <p class="parrafo-1"><span class="parrafo__subtitulo-1">Soy analista de fútbol</span>, con especial interés en la visualización de datos y el uso de métricas avanzadas para el análisis profundo del juego, a nivel colectivo e individual.</p>
-                <p class="parrafo-1"><span class="parrafo__subtitulo-1">Desarrollo dashboards y reportes atractivos, interactivos y automatizados</span> que cualquiera puede manipular, sin la necesidad de conocimientos previos. Todo es customizable y puede incluir datos de eventing, tracking, wellness o cualquier otra fuente de información que se disponga.</p>
-                <p class="parrafo-1"><span class="parrafo__subtitulo-1">Genero índices de rendimiento</span>, que resumen un amplio espectro de datos en un número del 1 al 10. La ponderación de las estadísticas se adapta a las necesidades del cliente. Los índices pueden ser generales, agrupados en categorías (ataque, defensa, creación, etc.) o ajustados por posición/rol.</p>
-                <p class="parrafo-1"><span class="parrafo__subtitulo-1">Brindo asesoramiento personalizado</span> a clubes, federaciones y agencias para desarrollar o mejorar el uso de datos para el análisis y la toma de decisiones. Capacidad de generar un impacto desde cero y con recursos limitados</p>
+        <div class="container">
+            <h1 id="sobremi" class="titulos titulo__sobremi">ABOUT ME</h1>
+            <div class="sobremi">
+                <div class="contenido__sobre mi">
+                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I&#39;m a football analyst</span>, with a special interest in data visualization and the use 
+                        of advanced metrics for an in-depth analysis of the game, both at a collective and individual level.</p>
+                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I develop attractive, interactive and automated dashboards and reports</span> that anyone can handle without the need for previous knowledge. Everything 
+                        is customizable and can display information from multiple sources, including 
+                        eventing, tracking, wellness questionnaires, injury history or any other available data source.</p>
+                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I create performance indexes</span>, s that summarize a wide range of data in a 
+                        number from 1 to 10. The stats weighting can be adapted to the customer&#39;s 
+                        needs. The performance indexes can be general, divided into categories (attack, defense, etc.) or adjusted by player position/role.</p>
+                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I provide personalized advice</span> to clubs, federations and agencies who want to 
+                        develop or improve the use of data for analysis and decision making.
+                        </p>
+                </div>
+                <div class="img__center">
+                    <img class="img__sobremi-1" src="img/sobremi-1.png" alt="sobremi-1">
+                </div>
             </div>
-            <img src="img/sobremi-1.png" alt="sobremi-1">
+            <div class="sobremi__expe">
+                <div class="img__center">
+                    <img class="img__sobremi-2" src="img/sobremi-2.png" alt="sobremi-2">
+                </div>
+                <div>
+                    <h2 class="subtitulo__expe">EXPERIENCE</h2>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Club Atlético Peñarol | 2021-present</span><br/>
+                        Data Analyst & Technical Scout<br/>
+                        Team, Opposition and Recruitment analysis <br/>
+                        Data processing and visualization, external & internal sources <br/>
+                        Development of multiple reports for various areas of performance <br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Sevilla FC, Sports Data Campus & UCAM | 2021-present</span><br/>
+                        Master&#39;s degree in Big Data applied to Scouting<br/>
+                        A teacher of the &#39;Opposition Analysis&#39; module<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Houston Dynamo (MLS) | 2020-2021</span><br/>
+                        Regional Scout, South America<br/>
+                        Recruitment analysis, reporting to the chief scout <br/>
+                        Creation of custom reports and a custom performance index<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Index MVP | 2020</span><br/>
+                        Co-creator <br/>
+                        Creation of an automated player rating system <br/>
+                        Master&#39;s Thesis in Sports Big Data (Sports Data Campus & UCAM) <br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Opta (Stats Perform) | 2014-2021</span><br/>
+                        Senior Data Editor, Latin America<br/>
+                        Stats analysis, custom reports and content creation for clients<br/>
+                        Tailor-made work for professional clubs, federations and the media<br/>
+                        Planning and organizing the team&#39;s day-to-day opperations <br/>
+                        Social media manager, @OptaJavier Twitter account <br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Anglo | 2012-2014</span><br/>
+                        English Teacher <br/>
+                    </p>
+                </div>
+            </div>
+            <div class="sobremi__formacion">
+                <div>
+                    <h2 class="subtitulo__expe">EDUCATION</h2>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Master&#39;s Degree in Sports Big Data </span>| Universidad Católica de Murcia & Sports Data Campus<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Sports Management Certificate </span>|  Universidad de Palermo<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Technical Scouting L1 & L2 </span>|  The Professional Football Scouts Association<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Talent Identification L1 </span>|  The Professional Football Scouts Association<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Opposition Analysis L1 </span>|  The Professional Football Scouts Association<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">R for Football Analysts </span>| Objetivo Analista<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Data Science (Power BI, Python, SQL) </span>|  Coderhouse<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Tableau </span>|  Coderhouse<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Excel Avanzado </span>|  Taller de Informática Uruguay<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Tactical Analysis </span>|  Baça Innovation Hub<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">MBA Football Management </span>| Be Magistral<br/>
+                    </p>
+
+                    <h2 class="subtitulo__expe marginTop-6">LANGUAGES</h2>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Certificate of Proficiency in English </span>|  Cambridge<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Teaching English as a Foreign Language </span>|  Anglo Uruguay<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Certificate in Translation English/Spanish </span>| Anglo Uruguay<br/>
+                    </p>
+                    <p class="parrafo-1">
+                        <span class="parrafo__subtitulo-1">Portuguese Level 5 (upper-intermediate) </span>|  Instituto Cultural Uruguayo Brasileño<br/>
+                    </p>
+                </div>
+                <div class="img__center">
+                    <img class="img__sobremi-3" src="img/sobremi-3.png" alt="sobremi-3">
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="servicios">
-        <h1 id="servicios" class="titulos">Servicios</h1>
+        <h1 id="servicios" class="titulos__servicio">SERVICES</h1>
         <div  class="servicios__article">
-            <article>
-                <p class="servicios__titulo">Scouting técnico</p>
-                <p class="servicios__texto">Análisis y <br> seguimiento de <br> jugadores</p>
+            <article class="ancho__article">
+                <p class="servicios__titulo">TECHNICAL SCOUTING</p>
+                <p class="servicios__texto">Player analysis and monitoring
+                    (data, video and live analysis)</p>
             </article>
-            <article>
-                <p class="servicios__titulo">Análisis cualitativos</p>
-                <p class="servicios__texto">Equipo propio y <br> rivales</p>
+            <article class="ancho__article">
+                <p class="servicios__titulo">PRE & POST-MATCH ANALYSIS</p>
+                <p class="servicios__texto">Own team and opposition analysis, 
+                    both at a team and player level</p>
             </article>
-            <article>
-                <p class="servicios__titulo">Asesoramiento</p>
-                <p class="servicios__texto">Clubes,<br> federaciones y<br> agencias</p>
+            <article class="ancho__article">
+                <p class="servicios__titulo">DEVELOPMENT</p>
+                <p class="servicios__texto">Custom, interactive and 
+                    automated reports</p>
             </article>
-            <article>
-                <p class="servicios__titulo">Desarrollo</p>
-                <p class="servicios__texto">Dashboards <br> y reportes <br> personalizados</p>
+            <article class="ancho__article">
+                <p class="servicios__titulo">PERSONALIZED ADVICE</p>
+                <p class="servicios__texto">To clubs, federations and agencies 
+                    who want to improve their use of data</p>
             </article>
-            <article>
-                <p class="servicios__titulo">Ponencias</p>
-                <p class="servicios__texto">Abierto a participar <br> en conferencias y <br> dictar cursos</p>
+            <article class="ancho__article">
+                <p class="servicios__titulo">SPEAKER</p>
+                <p class="servicios__texto">Participation in courses, 
+                    webinars and conferences
+                    </p>
             </article>
         </div>
     </section>
 
+    <section class="contactanos">
+        
+            <h1 id="contactanos" class="titulos__contacto">LET&#39;S TALK!</h1><br>
+            <!--<p class="texto__contacto">Agenda una reunión para hablar conmigo</p>-->
+            <div class="contacto__calendly">
+                <div class="calendly-inline-widget calendly" data-url="https://calendly.com/juniorariasrojas/reunion-con-augusto-ingles?hide_gdpr_banner=-1" ></div>
+                <!--<div ><img class="augusto_reu" src="img/reu-augusto.png" alt="reu-augusto"></div>-->
+            
+            </div>
+        
+    </section>
+
+
     <section>
-        <h1 id="publicaciones" class="titulos">Publicaciones</h1>
+        <h1 id="publicaciones" class="titulos titulo__publicacion">PUBLICATIONS</h1>
         <div class="publicaciones">
             <article class="publicaciones__maradona">
-                <img src="https://via.placeholder.com/450x260" alt="Imagen Maradona">
-                <p class="publicaciones__texto">Maradona: A Legend s World Cup <br> Exploits in Numbers</p>
+                <img class="img_publi-1" src="img/publi-1.png" alt="Imagen Maradona">
+                <p class="publicaciones__texto">Maradona: A Legend&#39;s World Cup<br> Exploits in Numbers</p>
             </article>
             <article class="publicaciones__maradona">
-                <img src="https://via.placeholder.com/500x260" alt="Imagen Sudamericanos">
-                <p class="publicaciones__texto">SUDAMERICANOS MIRANDO HACIA EUROPA: <br> LAS ESTRELLAS 
-                    JÓVENES QUE ENCIENDEN EL <br> FÚTBOL BRASILEÑO</p>
+                <img class="img_publi-2" src="img/publi-2.png" alt="Imagen Sudamericanos">
+                <p class="publicaciones__texto">South Americans eyeing Europe:
+                    the starlets lighting up Brazilian football</p>
             </article>
         </div>
     </section>
+
+    <footer class="footer">
+        <h1 class="footer__titulo">You can also find me on:</h1>
+        <a href="#inicio">
+            <img class="btn__vector" src="img/Vector.png" alt="vector">
+        </a>
+        <div class="iconos">
+            <div class="icons">
+                <a href="https://wa.me/59899045771?text= %20" target="_blank"  class="icon icon--whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/augusto-rammauro" target="_blank"  class="icon icon--linkedin">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+                <a href="https://medium.com/@augustorammauro" target="_blank"  class="icon icon--medium">
+                    <i class="ri-medium-line"></i>
+                </a>
+                <a href="https://twitter.com/AugustoRammauro" target="_blank"  class="icon icon--twitter">
+                    <i class="ri-twitter-line"></i>
+                </a>
+                <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
+                <i class="ri-mail-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="fondo__footer">
+            <h1 class="texto__footer">PASSION FOR FOOTBALL, PASSION FOR DATA</h1>
+        </div>
+    </footer>
     <script defer src="main.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
