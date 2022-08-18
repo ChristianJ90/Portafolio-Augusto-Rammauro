@@ -1,7 +1,7 @@
 function App() {}
 
 window.onload = function (event) {
-    var app = new App();
+    let app = new App();
     window.app = app;
 };
 
