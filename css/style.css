@@ -452,7 +452,7 @@ header {
     display: flex;
     align-items: center;
     width: fit-content;
-    height: 31rem;
+    height: 388px;
     padding: 10px 0px ;
     margin: 0px auto;
     max-width: 72vw;
@@ -468,28 +468,42 @@ header {
 }
 .slick {
     position: relative;
-    width: 35rem;
+    width: 588px;
+    height: 388px;
     padding: 0 ;
     float: left;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15em;
+    margin-right: 10rem;
+}
+.slider__tablue-1{
+    opacity: 0.2;
+    width: 588px;
+    height: 388px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
 }
 .slick a iframe{
     opacity: 0.3;
-    height: 28rem;
+    width: 588px;
+    height: 388px;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
     transition: .3s ease-in-out;
 }
 .slick a iframe:hover {
     opacity: 1;
-    width: 33rem;
-    height: 30rem;
+    width: 588px;
+    height: 388px;
 }
-.slick a img{
+/* .slick a img{
     opacity: 0.2;
-    width: 28rem;
-    height: 28rem;
+    width: 588px;
+    height: 388px;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
     transition: .3s ease-in-out;
@@ -498,7 +512,12 @@ header {
     opacity: 1;
     width: 33rem;
     height: 30rem;
-} 
+}  */
+.slick a img:hover{
+    opacity: 1;
+    width: 595px;
+    height: 395px;
+}
     /**** botones ****/
 .slick-arrow{
     border-radius: 3rem;
@@ -539,10 +558,10 @@ header {
         padding: 0 ;
         max-width: 72vw;
     }
-    .slick a img {
+    /* .slick a img {
         height: 15rem;
         width: 86%;
-    }
+    } */
     .slick-next {
         right: 0;
     }
@@ -560,10 +579,10 @@ header {
         padding: 0 ;
         max-width: 72vw;
     }
-    .slick a img {
+    /* .slick a img {
         height: 15rem;
         width: 100%;
-    }
+    } */
     .slick-next {
         right: 7px;
     }
@@ -600,12 +619,12 @@ header {
         width: 40rem;
         padding: 0 1rem;
     }
-    .slick a img {
+    /* .slick a img {
         height: 25rem;
         width: 29rem;
         margin: 0;
         padding: 0;
-    }
+    } */
     .slick-next {
         right: 10rem;
     }
@@ -623,12 +642,12 @@ header {
         width: 40rem;
         padding: 0 1rem;
     }
-    .slick a img {
+    /* .slick a img {
         height: 25rem;
         width: 29rem;
         margin: 0;
         padding: 0;
-    }
+    } */
     .slick-next {
         right: 10rem;
     }
