@@ -58,8 +58,7 @@ h1,h2,h3 {
     padding: 4rem;
 }
 .container{
-    max-width: 130rem;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -414,6 +413,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10rem;
+    width: 100%;
     height: 100%;
 }
 
@@ -548,7 +548,7 @@ header {
 .productos {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 99%;
     height:150rem;
 }
     /**** Responsive Productos ****/
@@ -559,7 +559,7 @@ header {
     }
     .productos {
         display: flex;
-        justify-content:stretch;
+        justify-content:space-evenly;
         width: 100%;
     }        
 }
@@ -570,8 +570,8 @@ header {
 }
     /**** Aside ****/
 .productos__aside {
-    width: 30rem;
-    height: 30rem;
+    width: 20%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -584,8 +584,8 @@ header {
 }
 .productos__aside--card {
     margin-bottom: 8rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
 }
 .productos__aside--titulo {
     color: var(--blanco);
@@ -690,6 +690,9 @@ header {
     }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
+    .productos{
+        width: 98%;
+    }
     .productos__aside {
         width: 22rem;
         height: 22rem;
@@ -697,7 +700,7 @@ header {
     .productos__aside img {
         width: 19rem;
         height: 16rem;
-        padding-left: 1rem;   
+        padding-left: 0.5rem;   
     }
     .productos__aside--titulo {
         font-size: 2.6rem;
@@ -759,17 +762,19 @@ header {
 .Carousel {
     width: 100%;
     margin-bottom: 16rem;
-    margin-top: 6rem;
+   /* margin-top: 6rem;*/
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
 }
     /**** Imagenes ****/  
 .slick-list {
     position: relative;
     display: flex;
     align-items: center;
-
     padding: 10px 0px ;
-    margin: 0px auto;
-    max-width: 40vw;
+    /*margin: 0px auto;*/
+    /*max-width: 40vw;*/
     overflow: hidden;
 }
 .slick-track {
@@ -789,17 +794,17 @@ header {
 }
 .slick img{
     opacity: 0.2;
-    width: 38rem;
-    height: 38rem;
+    width: 37rem;
+    height: 37rem;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
     transition: .3s ease-in-out;
 }
-.slick img:hover {
+/*.slick img:hover {
     opacity: 1;
-    width: 39rem;
-    height: 39rem;
-} 
+    width: 38.5rem;
+    height: 38.5rem;
+} */
     /**** botones ****/
 .slick-arrow{
     border-radius: 3rem;
@@ -836,13 +841,12 @@ header {
     right: 0px;
 }
     /***Responsive Carrusel ***/
-@media (max-width: 480px)  {
+@media (max-width: 319px)  {
     .Carousel {
         margin-top: 0 ;
         margin-bottom: 0.7rem;
     } 
     .slick {
-        width: 40rem;
         padding: 0 0.5rem;
     }
     .slick-list {
@@ -850,23 +854,23 @@ header {
         padding: 0 ;
         max-width: 80vw;
     }
-    .slick a img {
+    /*.slick a img {
         height: 18rem;
         width: 23rem;
         margin-left: 3rem ;
         padding: 0;
-    }
+    }*/
     .slick img {
         height: 20rem;
         width: 20rem;
         margin-left: 5.5rem ;
         padding: 0;
     }
-    .slick a img:hover {
+    /*.slick a img:hover {
         opacity: 1;
         width: 24rem;
         height: 19rem;
-    }
+    }*/
     .slick img:hover {
         opacity: 1;
         width: 21rem;
@@ -881,40 +885,186 @@ header {
         
     }
 }
-@media (min-width: 481px) and  (max-width: 767px) {
+@media (min-width: 375px) and  (max-width: 428px) {
     .Carousel {
-        margin: 0 0 5rem 0;
+        margin: 0 0 1rem 0;
     } 
-    .slick {
-        width: 40rem;
-        padding: 0 0.5rem;
-    }
     .slick-list {
         height: 31rem;
         padding: 10px 0px ;
         max-width: 80vw;
     }
-    .slick a img {
+    .slick .img1 {
+        height: 18rem;
+        width: 30rem;
+        margin-left: 3rem;
+    }
+    .slick .img1:hover {
+        height: 18.5rem;
+        width: 30.5rem;
+    }
+    .slick img {
+        height: 20rem;
+        width: 20rem;
+        padding: 0;
+        margin-left: 0;
+    }
+    .slick img:hover {
+        height: 25.5rem;
+        width: 25.5rem;
+        opacity: 1;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 2rem;
+        
+    }
+}
+@media (min-width: 429px) and  (max-width: 500px) {
+    .Carousel {
+        margin: 0 0 6rem 0;
+    } 
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+        max-width: 66vw;
+    }
+    .slick .img1 {
         height: 23rem;
         width: 30rem;
-        margin-left: 3rem ;
-        padding: 0;
+        margin-left: 1rem;
+    }
+    .slick .img1:hover {
+        height: 23.5rem;
+        width: 30.5rem;
     }
     .slick img {
         height: 25rem;
-        width: 26rem;
-        margin-left: 5rem ;
+        width: 25rem;
         padding: 0;
-    }
-    .slick a img:hover {
-        opacity: 1;
-        width: 32rem;
-        height: 26rem;
+        margin-left: 0;
     }
     .slick img:hover {
+        height: 25.5rem;
+        width: 25.5rem;
         opacity: 1;
-        width: 27rem;
-        height: 27rem;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 2rem;
+        
+    }
+}
+@media (min-width: 501px) and  (max-width: 599px) {
+    .Carousel {
+        margin: 0 0 7rem 0;
+    } 
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+        max-width: 68vw;
+    }
+    .slick .img1 {
+        height: 24rem;
+        width: 36rem;
+        margin-left: 1rem;
+    }
+    .slick .img1:hover {
+        height: 24.5rem;
+        width: 36.5rem;
+    }
+    .slick img {
+        height: 30rem;
+        width: 30rem;
+        padding: 0;
+        margin-left: 4rem;
+    }
+    .slick img:hover {
+        height: 30.5rem;
+        width: 30.5rem;
+        opacity: 1;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 2rem;
+        
+    }
+}
+@media (min-width: 600px) and  (max-width: 699px) {
+    .Carousel {
+        margin: 0 0 7rem 0;
+    } 
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+        max-width: 71vw;
+    }
+    .slick .img1 {
+        height: 26rem;
+        width: 40.5rem;
+        margin-left: 1rem;
+    }
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 40.5rem;
+    }
+    .slick img {
+        height: 30rem;
+        width: 30rem;
+        padding: 0;
+        margin-left: 6rem;
+    }
+    .slick img:hover {
+        height: 30.5rem;
+        width: 30.5rem;
+        opacity: 1;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 3rem;
+        
+    }
+}
+@media (min-width: 700px) and  (max-width: 768px) {
+    .Carousel {
+        margin: 0 0 17.5rem 0;
+    } 
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+        max-width: 72vw;
+    }
+    .slick .img1 {
+        height: 28rem;
+        width: 40.5rem;
+        margin-left: 5rem;
+    }
+    .slick .img1:hover {
+        height: 28.5rem;
+        width: 40.5rem;
+    }
+    .slick img {
+        height: 32rem;
+        width: 32rem;
+        padding: 0;
+        margin-left: 11rem;
+    }
+    .slick img:hover {
+        height: 32.5rem;
+        width: 32.5rem;
+        opacity: 1;
     }
     .slick-prev {
         margin-left: 2rem;
@@ -925,38 +1075,80 @@ header {
         
     }
 }
-@media (min-width: 768px) and  (max-width: 911px) {
+@media (min-width: 769px) and  (max-width: 800px) {
     .Carousel {
+        width: 99%;
         margin: 3.8rem 0 15rem 0;
     } 
     .slick {
-        width: 40rem;
         padding: 0 0.5rem;
     }
     .slick-list {
         height: 31rem;
         padding: 10px 0px ;
-        max-width: 80vw;
+         max-width: 70vw;
     }
-    .slick a img {
-        height: 29rem;
-        width: 35rem;
-        margin: 0;
-        padding: 0;
+    .slick .img1 {
+        height: 26rem;
+        width: 40.5rem;
+        margin-left: 6.1rem;
     }
-    .slick a img:hover {
-        height: 30rem;
-        width: 36rem;
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 40.5rem;
     }
     .slick img {
         height: 32rem;
         width: 32rem;
-        margin: 0;
         padding: 0;
+        margin-left: 9rem;
     }
     .slick img:hover {
-        height: 33rem;
-        width: 33rem;
+        height: 32.5rem;
+        width: 32.5rem;
+        opacity: 1;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 4rem;
+        
+    }
+}
+@media (min-width: 801px) and  (max-width: 911px) {
+    .Carousel {
+        width: 99%;
+        margin: 3.8rem 0 15rem 0;
+    } 
+    .slick {
+        padding: 0 0.5rem;
+    }
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+         max-width: 70vw;
+    }
+    .slick img {
+        height: 32rem;
+        width: 32rem;
+        padding: 0;
+        margin-left: 12rem;
+    }
+    .slick img:hover {
+        height: 32.5rem;
+        width: 32.5rem;
+        opacity: 1;
+    }
+    .slick .img1 {
+        height: 26rem;
+        width: 40.5rem;
+        margin-left: 7rem;
+    }
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 40.5rem;
     }
     .slick-prev {
         margin-left: 2rem;
@@ -976,15 +1168,23 @@ header {
         padding: 10px 0px ;
         max-width: 80vw;
     }
-    .slick a img {
-        height: 30rem;
-        width: 38rem;
+    .slick .img1 {
+        height: 26rem;
+        width: 35rem;
+    }
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 35.5rem;
+    }
+    .slick img {
+        height: 32rem;
+        width: 32rem;
         margin: 0 1rem;
         padding: 0;
     }
-    .slick img {
-        height: 38rem;
-        width: 38rem;
+    .slick img:hover {
+        height: 32.5rem;
+        width: 32.5rem;
         margin: 0 1rem;
         padding: 0;
     }
@@ -996,8 +1196,9 @@ header {
         margin-right: 6rem;
     }
 }
-@media (min-width: 1024px) and  (max-width: 1439px) {
+@media (min-width: 1024px) and  (max-width: 1279px) {
     .Carousel {
+        width: 99%;
         margin:3rem 0 15.3rem 0;
     } 
     .slick-list {
@@ -1005,29 +1206,61 @@ header {
         padding: 10px 0px ;
         max-width: 80vw;
     }
-    .slick a img {
+    .slick .img1 {
         height: 26rem;
         width: 35rem;
-        margin: 0 1rem;
-        padding: 0;
     }
-    .slick a img:hover {
-        height: 27rem;
-        width: 36rem;
-        margin: 0 1rem;
-        padding: 0;
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 35.5rem;
     }
     .slick img {
-        height: 35rem;
-        width: 35rem;
+        height: 32rem;
+        width: 32rem;
         margin: 0 1rem;
         padding: 0;
     }
     .slick img:hover {
-        height: 36rem;
-        width: 36rem;
+        height: 32.5rem;
+        width: 32.5rem;
+        opacity: 1;
+    }
+    .slick-prev {
+        margin-left: 2rem;
+    }
+    .slick-next {
+        right: 0;
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 1280px) and  (max-width: 1439px) {
+    .Carousel {
+        width: 99%;
+        margin:3rem 0 15.3rem 0;
+    } 
+    .slick-list {
+        height: 31rem;
+        padding: 10px 0px ;
+        max-width: 80vw;
+    }
+    .slick .img1 {
+        height: 26rem;
+        width: 35rem;
+    }
+    .slick .img1:hover {
+        height: 26.5rem;
+        width: 35.5rem;
+    }
+    .slick img {
+        height: 32rem;
+        width: 32rem;
         margin: 0 1rem;
         padding: 0;
+    }
+    .slick img:hover {
+        height: 32.5rem;
+        width: 32.5rem;
+        opacity: 1;
     }
     .slick-prev {
         margin-left: 2rem;
@@ -1039,6 +1272,7 @@ header {
 }
 @media (min-width: 1440px)  {
     .Carousel {
+        width: 100%;
         margin:3.8rem 0 16rem 0;
     } 
     .slick-list {
@@ -1046,17 +1280,24 @@ header {
         padding: 10px 0px ;
         max-width: 80vw;
     }
-    .slick a img {
-        height: 35rem;
-        width: 37rem;
-        margin: 0 1rem;
-        padding: 0;
+    .slick .img1 {
+        height: 28rem;
+        width: 35rem;
+    }
+    .slick .img1:hover {
+        height: 28.5rem;
+        width: 35.5rem;
     }
     .slick img {
         height: 37rem;
         width: 37rem;
         margin: 0 1rem;
         padding: 0;
+    }
+    .slick img:hover {
+        height: 37.5rem;
+        width: 37.5rem;
+        opacity: 1;
     }
     .slick-next-none {
         display: none;
