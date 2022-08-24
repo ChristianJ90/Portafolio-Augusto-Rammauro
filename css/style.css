@@ -763,7 +763,6 @@ header {
 .Carousel {
     width: 100%;
     margin-bottom: 1rem;
-   /* margin-top: 6rem;*/
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -852,23 +851,64 @@ header {
     margin-right: 5rem;
 }
     /***Responsive Carrusel ***/
+@media (min-width: 280px)  {
+        /**** Imagenes ****/  
+    .slick-list {
+        max-width: 68vw;
+    }
+    .slick {
+        margin: 5rem 1rem 9rem;
+    }
+    .slick .img1 {
+        height: 17rem;
+        width: 23rem;
+    }
+    .slick .img1:hover {
+        height: 17.5rem;
+        width: 23.5rem;
+    }
+    .slick img {
+        width: 19rem;
+        height: 19rem;
+    }
+    .slick img:hover {
+        opacity: 1;
+        width: 19.5rem;
+        height: 19.5rem;
+    } 
+        /**** botones ****/
+    .slick-arrow{
+        width: 3rem;
+        height: 3rem;
+    }
+    .slick-next {
+        margin-right: 0.7rem;
+    }   
+}
 @media (min-width: 765px)  {
     .Carousel {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
         gap: 3rem;
     }
         /**** Imagenes ****/  
     .slick-list {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0px auto;
-        overflow: hidden;
         max-width: 70vw;
     }
+    .slick .img1 {
+        height: 29rem;
+        width: 47rem;
+    }
+    .slick .img1:hover {
+        height: 29.5rem;
+        width: 47.5rem;
+    }
+    .slick img {
+        width: 33rem;
+        height: 33rem;
+    }
+    .slick img:hover {
+        width: 33.5rem;
+        height: 33.5rem;
+    } 
     .slick-next {
         right: 0px;
         margin-right: 2rem;
@@ -876,19 +916,27 @@ header {
 }
 @media (min-width: 1024px)  {
     .Carousel {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
         gap: 3rem;
     }
+    .slick .img1 {
+        height: 29rem;
+        width: 47rem;
+    }
+    .slick .img1:hover {
+        height: 29.5rem;
+        width: 47.5rem;
+    }
+    .slick img {
+        width: 33rem;
+        height: 33rem;
+    }
+    .slick img:hover {
+        opacity: 1;
+        width: 33.5rem;
+        height: 33.5rem;
+    } 
         /**** Imagenes ****/  
     .slick-list {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0px auto;
-        overflow: hidden;
         max-width: 75vw;
     }
     .slick-next {
@@ -898,19 +946,26 @@ header {
 }
 @media (min-width: 1024px)  {
     .Carousel {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
         gap: 3rem;
     }
+    .slick .img1 {
+        height: 29rem;
+        width: 47rem;
+    }
+    .slick .img1:hover {
+        height: 29.5rem;
+        width: 47.5rem;
+    }
+    .slick img {
+        width: 33rem;
+        height: 33rem;
+    }
+    .slick img:hover {
+        width: 33.5rem;
+        height: 33.5rem;
+    } 
         /**** Imagenes ****/  
     .slick-list {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0px auto;
-        overflow: hidden;
         max-width: 75vw;
     }
     .slick-next {
@@ -920,515 +975,34 @@ header {
 }
 @media (min-width: 1439px)  {
     .Carousel {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 3rem;
+        gap: 4rem;
     }
+    .slick .img1 {
+        height: 29rem;
+        width: 47rem;
+    }
+    .slick .img1:hover {
+        height: 29.5rem;
+        width: 47.5rem;
+    }
+    .slick img {
+        width: 33rem;
+        height: 33rem;
+    }
+    .slick img:hover {
+        opacity: 1;
+        width: 33.5rem;
+        height: 33.5rem;
+    } 
     /**** Imagenes ****/  
     .slick-list {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0px auto;
-        overflow: hidden;
         max-width: 80vw;
     }   
     .slick-next {
         right: 0px;
         margin-right: 2rem;
     }    
-}
-/***@media (max-width: 374px)  {
-    .Carousel {
-        margin:10px 0 2px 0;
-    }
-    .slick {
-        margin: 0 ;
-    }
-    .slick-list {
-        height: 20rem;
-        padding: 0 ;
-        width: 62vw;
-    }
-    .slick .img1 {
-        height: 18rem;
-        width: 30rem;
-        margin-left: 0;
-    }
-    .slick .img1:hover {
-        height: 18.5rem;
-        width: 30.5rem;
-    }
-    .slick img {
-        height: 20rem;
-        width: 20rem;
-        padding: 0;
-        margin-left: 0;
-    }
-    .slick img:hover {
-        height: 25.5rem;
-        width: 25.5rem;
-        opacity: 1;
-    }
-    .slick-arrow{
-        width: 3rem;
-        height: 3rem;
-        margin-top: 3rem;
-    }
-    .slick-next {
-        right: 1.7rem;
-    }
-    .slick-prev {
-        left: 2rem;
-    }
-}
-    /***Responsive Carrusel***/
-/***@media (min-width: 375px) and (max-width: 400px) {
-    .Carousel {
-        margin:10px 0 42px 0;
-    }
-    .slick-list {
-        height: 20rem;
-        padding: 0 ;
-        max-width: 72vw;
-    }
-    /* .slick a img {
-        height: 15rem;
-        width: 100%;
-    } */
-    /*.slick-next {
-        right: 7px;
-    }
-}
-@media (min-width: 401px) and  (max-width: 428px) {
-    .Carousel {
-        margin: 0 0 1rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 80vw;
-    }
-    .slick .img1 {
-        height: 18rem;
-        width: 30rem;
-        margin-left: 3rem;
-    }
-    .slick .img1:hover {
-        height: 18.5rem;
-        width: 30.5rem;
-    }
-    .slick img {
-        height: 20rem;
-        width: 20rem;
-        padding: 0;
-        margin-left: 0;
-    }
-    .slick img:hover {
-        height: 25.5rem;
-        width: 25.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 2rem;
-        
-    }
-}
-@media (min-width: 429px) and  (max-width: 500px) {
-    .Carousel {
-        margin: 0 0 6rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 66vw;
-    }
-    .slick .img1 {
-        height: 23rem;
-        width: 30rem;
-        margin-left: 1rem;
-    }
-    .slick .img1:hover {
-        height: 23.5rem;
-        width: 30.5rem;
-    }
-    .slick img {
-        height: 25rem;
-        width: 25rem;
-        padding: 0;
-        margin-left: 0;
-    }
-    .slick img:hover {
-        height: 25.5rem;
-        width: 25.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 2rem;
-        
-    }
-}
-@media (min-width: 501px) and  (max-width: 599px) {
-    .Carousel {
-        margin: 0 0 7rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 68vw;
-    }
-    .slick .img1 {
-        height: 24rem;
-        width: 36rem;
-        margin-left: 1rem;
-    }
-    .slick .img1:hover {
-        height: 24.5rem;
-        width: 36.5rem;
-    }
-    .slick img {
-        height: 30rem;
-        width: 30rem;
-        padding: 0;
-        margin-left: 4rem;
-    }
-    .slick img:hover {
-        height: 30.5rem;
-        width: 30.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 2rem;
-        
-    }
-}
-@media (min-width: 600px) and  (max-width: 699px) {
-    .Carousel {
-        margin: 0 0 7rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 71vw;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 40.5rem;
-        margin-left: 1rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 40.5rem;
-    }
-    .slick img {
-        height: 30rem;
-        width: 30rem;
-        padding: 0;
-        margin-left: 6rem;
-    }
-    .slick img:hover {
-        height: 30.5rem;
-        width: 30.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 3rem;
-        
-    }
-}
-@media (min-width: 700px) and  (max-width: 768px) {
-    .Carousel {
-        margin: 0 0 17.5rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 72vw;
-    }
-    .slick .img1 {
-        height: 28rem;
-        width: 40.5rem;
-        margin-left: 5rem;
-    }
-    .slick .img1:hover {
-        height: 28.5rem;
-        width: 40.5rem;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        padding: 0;
-        margin-left: 11rem;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 7rem;
-        
-    }
-}
-@media (min-width: 769px) and  (max-width: 800px) {
-    .Carousel {
-        width: 99%;
-        margin: 3.8rem 0 15rem 0;
-    } 
-    .slick {
-        padding: 0 0.5rem;
-    }
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-         max-width: 70vw;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 40.5rem;
-        margin-left: 6.1rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 40.5rem;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        padding: 0;
-        margin-left: 9rem;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 4rem;
-        
-    }
-}
-@media (min-width: 801px) and  (max-width: 911px) {
-    .Carousel {
-        width: 99%;
-        margin: 3.8rem 0 15rem 0;
-    } 
-    .slick {
-        padding: 0 0.5rem;
-    }
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-         max-width: 70vw;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        padding: 0;
-        margin-left: 12rem;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        opacity: 1;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 40.5rem;
-        margin-left: 7rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 40.5rem;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 4rem;
-        
-    }
-}
-@media (min-width: 912px) and  (max-width: 1023px) {
-    .Carousel {
-        margin: 3.8rem 0 16rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 80vw;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 35rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 35.5rem;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        margin: 0 1rem;
-        padding: 0;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        margin: 0 1rem;
-        padding: 0;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 6rem;
-    }
-}
-@media (min-width: 1024px) and  (max-width: 1279px) {
-    .Carousel {
-        width: 99%;
-        margin:3rem 0 15.3rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 80vw;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 35rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 35.5rem;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        margin: 0 1rem;
-        padding: 0;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 2rem;
-    }
-}
-@media (min-width: 1280px) and  (max-width: 1439px) {
-    .Carousel {
-        width: 99%;
-        margin:3rem 0 15.3rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 80vw;
-    }
-    .slick .img1 {
-        height: 26rem;
-        width: 35rem;
-    }
-    .slick .img1:hover {
-        height: 26.5rem;
-        width: 35.5rem;
-    }
-    .slick img {
-        height: 32rem;
-        width: 32rem;
-        margin: 0 1rem;
-        padding: 0;
-    }
-    .slick img:hover {
-        height: 32.5rem;
-        width: 32.5rem;
-        opacity: 1;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-        margin-right: 2rem;
-    }
-}
-@media (min-width: 1440px) and  (max-width: 1980px){
-    .Carousel {
-        width: 100%;
-        margin:3.8rem 0 16rem 0;
-    } 
-    .slick-list {
-        height: 31rem;
-        padding: 10px 0px ;
-        max-width: 100vw;
-    }
-    .slick .img1 {
-        height: 28rem;
-        width: 35rem;
-    }
-    .slick .img1:hover {
-        height: 28.5rem;
-        width: 35.5rem;
-    }
-    .slick img {
-        height: 37rem;
-        width: 37rem;
-        margin: 0 1rem;
-        padding: 0;
-    }
-    .slick img:hover {
-        height: 37.5rem;
-        width: 37.5rem;
-        opacity: 1;
-    }
-    .slick-next-none {
-        display: none;
-    }
-    .slick-prev-none {
-        display: none;
-    }
-    .slick-prev {
-        margin-left: 2rem;
-    }
-    .slick-next {
-        right: 0;
-    }
-}**/    
+}    
 
 
 /**** Proveedores *****/
