@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Portafolio Augusto Rammauro</title>
-    <link href="./img/analytics_white_24dp.svg" rel="icon">
+    <title>Augusto Rammauro's Portfolio</title>
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="./img/analytics_white_24dp.svg" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="./css/style.css" class="preload">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header class="header" id="inicio">  
+    <header class="header">  
         <div  class="navegacion">     
             <input class="navegacion__hamburguesa" type="checkbox">
             <i class="fas fa-times"></i>
@@ -27,10 +28,10 @@
             </label>
             <nav class="navegacion__menu">
                 <a class="navegacion__menu--link active" href="#inicio">Home</a>
-                <a class="navegacion__menu--link" href="#trabajos">Work </a>
-                <a class="navegacion__menu--link" href="#sobremi">About me </a>
+                <a class="navegacion__menu--link" href="#trabajos">Works</a>
+                <a class="navegacion__menu--link" href="#sobremi">About me</a>
                 <a class="navegacion__menu--link" href="#servicios">Services</a>
-                <a class="navegacion__menu--link" href="#contactanos">Contact</a>
+                <a class="navegacion__menu--link" href="#contactanos">Contacts</a>
                 <a class="navegacion__menu--link" href="#publicaciones">Publications</a>
             </nav>
         </div> 
@@ -40,11 +41,11 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="container__hero">
             <div class="hero__titulo">
                 <h1 class="titulos--agust">Augusto Rammuro</h1>
-                <h3 class="sub__titulo--agust">-FOOTBALL ANALYST-</h3>
+                <h3 class="sub__titulo--agust">-Football Analyst-</h3>
             </div>
             <div class="hero__imagen">
                 <img class="img__augusto" src="img/Foto_Augusto.png" alt="foto-augusto">
@@ -72,20 +73,22 @@
           </div>
     </section>
 
-    <main class="container">
-        <h1 id="trabajos" class="titulos__productos">WORK I&#39;VE DONE</h1>
+    <main>
+        <h1 id="trabajos" class="titulos__productos">Work I've done</h1>
         <div  class="productos">
             <aside class="productos__aside">
                 <h2 class="productos__aside--titulo">Power BI</h2>
                 <div class="productos__aside--card productos__aside--powerBi">
-                    <img src="./img/Power BI1.png" alt="img Power bi">
-                    <p class="productos__aside--texto">Interactive and automated reports</p>
+                    <img src="./img/Power BI.png" alt="img Power bi">
+                    <p class="productos__aside--texto">Interactive <br> and automated
+                        reports</p>
                     
                 </div>
                 <div class="productos__aside--card productos__aside--tableau">
                     <h2 class="productos__aside--titulo">Tableau</h2>
                     <img src="./img/Tableau.png" alt="img Tableau">
-                    <p class="productos__aside--texto">Interactive and automated dashboards</p>
+                    <p class="productos__aside--texto">Interactive and automated dashboards
+                    </p>
                     
                 </div>
                 <div class="productos__aside--card productos__aside--python">
@@ -96,42 +99,36 @@
                 </div>
             </aside >
     
-            <div class="carruseles">
+            <div class="container">
                 <div class="Carousel">
                     <div class="slick-list" id="slick-list">
-                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <button class="slick-arrow slick-prev slick-prev-none" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         </button>
                         <div class="slick-track" id="track">
                             <div class="slick">
                                 <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/Power-Bi-Team-Rankings.gif" alt="Image">
-                                        </picture>
+                                    <a href="https://app.powerbi.com/reportEmbed?reportId=6e85633f-99cd-4dcd-b31d-e78666b6e0f9&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" target="_blank">
+                                            <img class="img1" src="./img/Power-Bi-Team-Rankings.gif" alt="Image">
                                     </a>
                                 </div>
                             </div>
                             <div class="slick">
                                 <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/Power-Bi-River-area-chart.gif" alt="Image">
-                                        </picture>
+                                    <a href="https://app.powerbi.com/reportEmbed?reportId=415701f2-8885-42da-ad76-3c86554b85df&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" target="_blank">
+                                            <img class="img1" src="./img/Power-Bi-River-area-chart.gif" alt="Image">
                                     </a>
                                 </div>
                             </div>
                             <div class="slick">
                                 <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/Power-Bi-River-Plate-GPS.gif" alt="Image">
-                                        </picture>
+                                    <a href="https://app.powerbi.com/reportEmbed?reportId=2e3fff62-cd9c-4772-8054-ce5a427724cd&autoAuth=true&ctid=34b1e15c-8f03-4e26-99ae-d3e99ca357fc&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" target="_blank">
+                                            <img class="img1" src="./img/Power-Bi-River-Plate-GPS.gif" alt="Image">
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <button class="slick-arrow slick-next slick-next-none" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                         </button>
                     </div>
@@ -139,95 +136,81 @@
     
             <div class="Carousel">
                     <div class="slick-list" id="slick-list">
-                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <button class="slick-arrow slick-prev slick-prev-none" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         </button>
                         <div class="slick-track" id="track">
                             <div class="slick">
                                 <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/Tableau-Match-Stats.gif" alt="Image">
-                                        </picture>
+                                    <a href="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;PassMapsAway-FBD&#47;DashboardAway&#47;1.png" target="_blank">
+                                        <img class="img__tableau img1" src="./img/Tableau-Match-Stats.gif" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="https%3A%2F%2Fpublic.tableau.com%2F" target="_blank">
+                                        <img class="img__tableau img1" src="./img/Tableau-Pass.gif" alt="Image">
                                     </a>
                                 </div>
                             </div>
                             <div class="slick">
                                 <div>
                                     <a href="/">
-                                        <picture>
-                                            <img src="./img/Tableau-Pass.gif" alt="Image">
-                                        </picture>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/Tableau-Player-Bars.gif" alt="Image">
-                                        </picture>
+                                        <img class="img__tableau img1" src="./img/Tableau-Player-Bars.gif" alt="Image">
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <button class="slick-arrow slick-next slick-next-none" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                         </button>
                     </div>
                 </div>
+
                 <div class="Carousel">
                     <div class="slick-list" id="slick-list">
                         <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
                         </button>
                         <div class="slick-track" id="track">
-                            <div class="slick">
+                            <div class="slick slick__python">
                                 <div>
-                                    <a href="/">
-                                            <img src="./img/FBD Pizza Plot 2.png" alt="Image">
-                                    </a>
+                                    <img src="./img/FBD Pizza Plot 2.png" alt="Image">
                                 </div>
                             </div>
-                            <div class="slick">
+
+                            <div class="slick slick__python">
                                 <div>
-                                    <a href="/">
-                                            <img src="./img/FBD Pizza Plot colores.png" alt="Image">
-                                    </a>
+                                    <img src="./img/FBD Pizza Plot colores.png" alt="Image">
                                 </div>
                             </div>
-                            <div class="slick">
+
+                            <div class="slick slick__python">
                                 <div>
-                                    <a href="/">
-                                        <picture>
-                                            <img src="./img/FBD Radar.png" alt="Image">
-                                        </picture>
-                                    </a>
+                                    <img src="./img/FBD Radar.png" alt="Image">
                                 </div>
                             </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                            <img src="./img/FBD Beeswarm progresión.png" alt="Image">
-                                    </a>
+
+                            <div class="slick slick__python">
+                                <div>                                   
+                                    <img src="./img/FBD Beeswarm progresión.png" alt="Image">
                                 </div>
                             </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                            <img src="./img/FBD Tiled Shot Maps.png" alt="Image">                                       
-                                    </a>
+
+                            <div class="slick slick__python">
+                                <div>                                   
+                                    <img src="./img/FBD Tiled Shot Maps.png" alt="Image">                                                                          
                                 </div>
                             </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                            <img src="./img/FBD xG Rolling Plots.png" alt="Image">
-                                    </a>
+
+                            <div class="slick slick__python">
+                                <div>                                   
+                                    <img src="./img/FBD xG Rolling Plots.png" alt="Image">                                    
                                 </div>
                             </div>
                         </div>
-                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <button class="slick-arrow slick-next " id="button-next" data-button="button-next" onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                         </button>
                     </div>
@@ -236,239 +219,242 @@
             </div>
         </main>
 
-    <section class="container__proveedor">
-        <div class="container">
-            <h1 class="titulo__proveedor titulos">PROVIDERS I&#39;VE WORKED WITH</h1>
-            <div class="marcas__provedor">
-                <div class="orden__marcas">
-                    <img class="img__provedor" src="img/provedor-1.png" alt="prov-1">
-                    <img class="img__provedor" src="img/provedor-2.png" alt="prov-2">
-                    <img class="img__provedor" class="img__prov--3 img__provedor" src="img/provedor-3.png" alt="prov-3">
-                    <img class="img__provedor" src="img/provedor-4.png" alt="prov-4">
-                    <img class="img__provedor" src="img/provedor-5.png" alt="prov-5">
-                </div>
-                <div class="orden__marcas">
-                    <img class="img__provedor" src="img/provedor-6.png" alt="prov-6">
-                    <img class="img__provedor" src="img/provedor-7.png" alt="prov-7">
-                    <img class="img__provedor" src="img/provedor-8.png" alt="prov-8">
-                    <img class="img__provedor" src="img/provedor-9.png" alt="prov-9">
-                    <img class="img__provedor" src="img/provedor-10.png" alt="prov-10">
+        <section class="container__proveedor">
+            <div class="container">
+                <h1 class="titulo__proveedor titulos">Providers I've worked with</h1>
+                <div class="marcas__provedor">
+                    <div class="orden__marcas">
+                        <img class="img__provedor img__prov--1" src="img/provedor-1.png" alt="prov-1">
+                        <img class="img__provedor" src="img/provedor-2.png" alt="prov-2">
+                        <img class="img__provedor img__prov--3" src="img/provedor-3.png" alt="prov-3">
+                        <img class="img__provedor" src="img/provedor-4.png" alt="prov-4">
+                        <img class="img__provedor" src="img/provedor-5.png" alt="prov-5">
+                    <!-- </div> -->
+                    <!-- <div class="orden__marcas"> -->
+                        <img class="img__provedor" src="img/provedor-6.png" alt="prov-6">
+                        <img class="img__provedor" src="img/provedor-7.png" alt="prov-7">
+                        <img class="img__provedor img__prov--8" src="img/provedor-8.png" alt="prov-8">
+                        <img class="img__provedor" src="img/provedor-9.png" alt="prov-9">
+                        <img class="img__provedor img__prov--9" src="img/provedor-10.png" alt="prov-10">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="container__sobre mi">
-        <div class="container">
-            <h1 id="sobremi" class="titulos titulo__sobremi">ABOUT ME</h1>
-            <div class="sobremi">
-                <div class="contenido__sobre mi">
-                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I&#39;m a football analyst</span>, with a special interest in data visualization and the use 
-                        of advanced metrics for an in-depth analysis of the game, both at a collective and individual level.</p>
-                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I develop attractive, interactive and automated dashboards and reports</span> that anyone can handle without the need for previous knowledge. Everything 
-                        is customizable and can display information from multiple sources, including 
-                        eventing, tracking, wellness questionnaires, injury history or any other available data source.</p>
-                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I create performance indexes</span>, s that summarize a wide range of data in a 
-                        number from 1 to 10. The stats weighting can be adapted to the customer&#39;s 
-                        needs. The performance indexes can be general, divided into categories (attack, defense, etc.) or adjusted by player position/role.</p>
-                    <p class="parrafo-1"><span class="parrafo__subtitulo-1">I provide personalized advice</span> to clubs, federations and agencies who want to 
-                        develop or improve the use of data for analysis and decision making.
+        </section>
+        
+        <section class="container__sobre mi">
+            <!-- <div class="container"> -->
+                <h1 id="sobremi" class="titulos titulo__sobremi">About me</h1>
+                <div class="sobremi container">
+                        <div class="contenido__sobremi">
+                            <p class="parrafo-1"><span class="parrafo__subtitulo-1">I’m a football analyst,</span> with a special interest in data visualization and the use of advanced metrics for an in-depth analysis of the game, both at a collective and individual level.
+                            </p>
+                            <p class="parrafo-1"><span class="parrafo__subtitulo-1">I develop attractive, interactive and automated dashboards and reports</span> that anyone can handle without the need for previous knowledge. Everything is customizable and can display information from multiple sources, including eventing, tracking, wellness questionnaires, injury history or any other available data source.
+                            </p>
+                            <p class="parrafo-1"><span class="parrafo__subtitulo-1">I create performance indexes</span> that summarize a wide range of data in a number from 1 to 10. The stats weighting can be adapted to the customer's needs. The performance indexes can be general, divided into categories (attack, defense, etc.) or adjusted by player position/role.
+                            </p>
+                            <p class="parrafo-1"><span class="parrafo__subtitulo-1">I provide personalized advice</span> to clubs, federations and agencies who want to develop or improve the use of data for analysis and decision making.</p>
+                        </div>
+                        <div class="img__center grid__img1">
+                            <img class="img__sobremi-1" src="img/sobremi-1.png" alt="sobremi-1">
+                        </div>
+        
+                </div>
+                <section class="bg_sobremi__exp">
+                    <div class="sobremi__expe container">
+                        <!-- <div class=""> -->
+                            <h2 class="subtitulo__expe__mobile">experience</h2>
+                            <div class="img__center grid__img2">
+                                <img class="img__sobremi-2" src="img/sobremi-2.png" alt="sobremi-2">
+                            </div>
+                            <div class="contenido__sobremiexp">
+                                <h2 class="subtitulo__expe">experience</h2>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Club Atlético Peñarol | 2021-presente</span><br/>
+                                    Data Analyst & Technical Scout <br/>
+                                    Team, Opposition and Recruitment analysis <br/>
+                                    Data processing and visualization, external & internal sources <br/>
+                                    Development of multiple reports for various areas of performance <br/>
+                                </p>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Sevilla FC, Sports Data Campus y UCAM | 2021-presente</span><br/>
+                                    Master's degree in Big Data applied to Scouting <br/>
+                                    A teacher of the 'Opposition Analysis' module <br/>
+                                </p>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Houston Dynamo (MLS) | 2020-2021</span><br/>
+                                    Regional Scout, South America <br/>
+                                    Recruitment analysis, reporting to the chief scout <br/>
+                                    Creation of custom reports and a custom performance index <br/>
+                                </p>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Index MVP | 2020</span><br/>
+                                    Co-creador <br/>
+                                    Creation of an automated player rating system <br/>
+                                    Master's Thesis in Sports Big Data (Sports Data Campus & UCAM) <br/>
+                                </p>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Opta (Stats Perform) | 2014-2021</span><br/>
+                                    Senior Data Editor, Latinoamérica <br/>
+                                    Analysis of statistics, generation of content and reports <br/>
+                                    Custom work for professional clubs, federations and media <br/>
+                                    Planning and organization of the team's daily operations <br/>
+                                    Social media manager, @OptaJavier Twitter account <br/>
+                                </p>
+                                <p class="parrafo-1">
+                                    <span class="parrafo__subtitulo-1">Anglo | 2012-2014</span><br/>
+                                    English Teacher <br/>
+                                </p>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </section>
+                <div class="sobremi__formacion container">
+                    <h2 class="subtitulo__form__mobile">education</h2>
+                    <div class="contenido__sobremiform">
+                        <h2 class="subtitulo__form">education</h2>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Master's Degree in Sports Big Data </span>|  Universidad Católica de Murcia y Sports Data Campus<br/>
                         </p>
-                </div>
-                <div class="img__center">
-                    <img class="img__sobremi-1" src="img/sobremi-1.png" alt="sobremi-1">
-                </div>
-            </div>
-            <div class="sobremi__expe">
-                <div class="img__center">
-                    <img class="img__sobremi-2" src="img/sobremi-2.png" alt="sobremi-2">
-                </div>
-                <div>
-                    <h2 class="subtitulo__expe">EXPERIENCE</h2>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Club Atlético Peñarol | 2021-present</span><br/>
-                        Data Analyst & Technical Scout<br/>
-                        Team, Opposition and Recruitment analysis <br/>
-                        Data processing and visualization, external & internal sources <br/>
-                        Development of multiple reports for various areas of performance <br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Sevilla FC, Sports Data Campus & UCAM | 2021-present</span><br/>
-                        Master&#39;s degree in Big Data applied to Scouting<br/>
-                        A teacher of the &#39;Opposition Analysis&#39; module<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Houston Dynamo (MLS) | 2020-2021</span><br/>
-                        Regional Scout, South America<br/>
-                        Recruitment analysis, reporting to the chief scout <br/>
-                        Creation of custom reports and a custom performance index<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Index MVP | 2020</span><br/>
-                        Co-creator <br/>
-                        Creation of an automated player rating system <br/>
-                        Master&#39;s Thesis in Sports Big Data (Sports Data Campus & UCAM) <br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Opta (Stats Perform) | 2014-2021</span><br/>
-                        Senior Data Editor, Latin America<br/>
-                        Stats analysis, custom reports and content creation for clients<br/>
-                        Tailor-made work for professional clubs, federations and the media<br/>
-                        Planning and organizing the team&#39;s day-to-day opperations <br/>
-                        Social media manager, @OptaJavier Twitter account <br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Anglo | 2012-2014</span><br/>
-                        English Teacher <br/>
-                    </p>
-                </div>
-            </div>
-            <div class="sobremi__formacion">
-                <div>
-                    <h2 class="subtitulo__expe">EDUCATION</h2>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Master&#39;s Degree in Sports Big Data </span>| Universidad Católica de Murcia & Sports Data Campus<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Sports Management Certificate </span>|  Universidad de Palermo<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Technical Scouting L1 & L2 </span>|  The Professional Football Scouts Association<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Talent Identification L1 </span>|  The Professional Football Scouts Association<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Opposition Analysis L1 </span>|  The Professional Football Scouts Association<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">R for Football Analysts </span>| Objetivo Analista<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Data Science (Power BI, Python, SQL) </span>|  Coderhouse<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Tableau </span>|  Coderhouse<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Excel Avanzado </span>|  Taller de Informática Uruguay<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Tactical Analysis </span>|  Baça Innovation Hub<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">MBA Football Management </span>| Be Magistral<br/>
-                    </p>
-
-                    <h2 class="subtitulo__expe marginTop-6">LANGUAGES</h2>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Certificate of Proficiency in English </span>|  Cambridge<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Teaching English as a Foreign Language </span>|  Anglo Uruguay<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Certificate in Translation English/Spanish </span>| Anglo Uruguay<br/>
-                    </p>
-                    <p class="parrafo-1">
-                        <span class="parrafo__subtitulo-1">Portuguese Level 5 (upper-intermediate) </span>|  Instituto Cultural Uruguayo Brasileño<br/>
-                    </p>
-                </div>
-                <div class="img__center">
-                    <img class="img__sobremi-3" src="img/sobremi-3.png" alt="sobremi-3">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="servicios">
-        <h1 id="servicios" class="titulos__servicio">SERVICES</h1>
-        <div  class="servicios__article">
-            <article class="ancho__article">
-                <p class="servicios__titulo">TECHNICAL SCOUTING</p>
-                <p class="servicios__texto">Player analysis and monitoring
-                    (data, video and live analysis)</p>
-            </article>
-            <article class="ancho__article">
-                <p class="servicios__titulo">PRE & POST-MATCH ANALYSIS</p>
-                <p class="servicios__texto">Own team and opposition analysis, 
-                    both at a team and player level</p>
-            </article>
-            <article class="ancho__article">
-                <p class="servicios__titulo">DEVELOPMENT</p>
-                <p class="servicios__texto">Custom, interactive and 
-                    automated reports</p>
-            </article>
-            <article class="ancho__article">
-                <p class="servicios__titulo">PERSONALIZED ADVICE</p>
-                <p class="servicios__texto">To clubs, federations and agencies 
-                    who want to improve their use of data</p>
-            </article>
-            <article class="ancho__article">
-                <p class="servicios__titulo">SPEAKER</p>
-                <p class="servicios__texto">Participation in courses, 
-                    webinars and conferences
-                    </p>
-            </article>
-        </div>
-    </section>
-
-    <section class="contactanos">
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Sports Management Certificate </span>|  Universidad de Palermo<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Technical Scouting L1 & L2 </span>|  The Professional Football Scouts Association<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Talent Identification L1 </span>|  The Professional Football Scouts Association<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Opposition Analysis L1 </span>|  The Professional Football Scouts Association<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">R for Football Analysts </span>| Objetivo Analista<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Data Science (Power BI, Python, SQL) </span>|  Coderhouse<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Tableau </span>|  Coderhouse<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Excel Avanzado </span>|  Taller de Informática Uruguay<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Tactical Analysis </span>|  Baça Innovation Hub<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">MBA Football Management </span>| Be Magistral<br/>
+                        </p>
         
-            <h1 id="contactanos" class="titulos__contacto">LET&#39;S TALK!</h1><br>
-            <!--<p class="texto__contacto">Agenda una reunión para hablar conmigo</p>-->
-            <div class="contacto__calendly">
-                <div class="calendly-inline-widget calendly" data-url="https://calendly.com/juniorariasrojas/reunion-con-augusto-ingles?hide_gdpr_banner=-1" ></div>
-                <!--<div ><img class="augusto_reu" src="img/reu-augusto.png" alt="reu-augusto"></div>-->
+                        <h2 class="subtitulo__idioma marginTop-6">languages</h2>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Certificate of Proficiency in English </span>|  Cambridge<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Teaching English as a Foreign Language </span>|  Anglo Uruguay<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Certificate in Translation English/Spanish </span>| Anglo Uruguay<br/>
+                        </p>
+                        <p class="parrafo-1">
+                            <span class="parrafo__subtitulo-1">Portuguese Level 5 (upper-intermediate) </span>|  Instituto Cultural Uruguayo Brasileño<br/>
+                        </p>
+                    </div>
+                    <div class="img__center grid__img3">
+                        <img class="img__sobremi-3" src="img/sobremi-3.png" alt="sobremi-3">
+                    </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        
+        <section class="servicios">
+            <div class="container">
+                <h1 id="servicios" class="titulos__servicio">Services</h1>
+                <div  class="servicios__article">
+                    <article class="ancho__article">
+                        <p class="servicios__titulo">Technical scouting</p>
+                        <p class="servicios__texto">Analysis and monitoring of players. (Data analysis, videos and live)</p>
+                    </article>
+                    <article class="ancho__article">
+                        <p class="servicios__titulo">Pre & Post-Match analysis</p>
+                        <p class="servicios__texto">Own team and rivals, at a collective and individual level</p>
+                    </article>
+                    <article class="ancho__article">
+                        <p class="servicios__titulo">Personalized advice</p>
+                        <p class="servicios__texto">To clubs, federations and agencies that wish to improve the use of data</p>
+                    </article>
+                    <article class="ancho__article">
+                        <p class="servicios__titulo">Development</p>
+                        <p class="servicios__texto">Personalized, interactive and automated reports</p>
+                    </article>
+                    <article class="ancho__article">
+                        <p class="servicios__titulo">Speaker</p>
+                        <p class="servicios__texto">Participation in courses, webinars and conferences</p>
+                    </article>
+                </div>
+                <div class="office__center">
+                    <img class="home__office" src="img/home-office.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section class="contactanos">
             
-            </div>
+                <h1 id="contactanos" class="titulos__contacto">¡Let's talk!</h1>
+                <!-- <p class="texto__contacto">Agenda una reunión para hablar conmigo</p> -->
+                <div class="contacto__calendly">
+                    <div class="calendly-inline-widget calendly" data-url="https://calendly.com/augustorammauro/30min?hide_gdpr_banner=1"></div>
+                    <!-- <img class="augusto_reu" src="img/reu-augusto.png" alt="reu-augusto"> -->
+                
+                </div>
+            
+        </section>
         
-    </section>
-
-
-    <section>
-        <h1 id="publicaciones" class="titulos titulo__publicacion">PUBLICATIONS</h1>
-        <div class="publicaciones">
-            <article class="publicaciones__maradona">
-                <img class="img_publi-1" src="img/publi-1.png" alt="Imagen Maradona">
-                <p class="publicaciones__texto">Maradona: A Legend&#39;s World Cup<br> Exploits in Numbers</p>
-            </article>
-            <article class="publicaciones__maradona">
-                <img class="img_publi-2" src="img/publi-2.png" alt="Imagen Sudamericanos">
-                <p class="publicaciones__texto">South Americans eyeing Europe:
-                    the starlets lighting up Brazilian football</p>
-            </article>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <h1 class="footer__titulo">You can also find me on:</h1>
-        <a href="#inicio">
-            <img class="btn__vector" src="img/Vector.png" alt="vector">
-        </a>
-        <div class="iconos">
-            <div class="icons">
-                <a href="https://wa.me/59899045771?text= %20" target="_blank"  class="icon icon--whatsapp">
-                    <i class="ri-whatsapp-line"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/augusto-rammauro" target="_blank"  class="icon icon--linkedin">
-                    <i class="ri-linkedin-line"></i>
-                </a>
-                <a href="https://medium.com/@augustorammauro" target="_blank"  class="icon icon--medium">
-                    <i class="ri-medium-line"></i>
-                </a>
-                <a href="https://twitter.com/AugustoRammauro" target="_blank"  class="icon icon--twitter">
-                    <i class="ri-twitter-line"></i>
-                </a>
-                <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
-                <i class="ri-mail-line"></i>
-                </a>
+        
+        <section>
+            <h1 id="publicaciones" class="titulos titulo__publicacion">Publications</h1>
+            <div class="publicaciones">
+                <article class="publicaciones__maradona">
+                    <img class="img_publi-1" src="img/publi-1.png" alt="Imagen Maradona">
+                    <p class="publicaciones__texto">Maradona: A Legend’s World Cup Exploits in Numbers</p>
+                </article>
+                <article class="publicaciones__maradona">
+                    <img class="img_publi-2" src="img/publi-2.png" alt="Imagen Sudamericanos">
+                    <p class="publicaciones__texto">South Americans eyeing Europe:
+                        the starlets lighting up Brazilian football</p>
+                </article>
             </div>
-        </div>
-        <div class="fondo__footer">
-            <h1 class="texto__footer">PASSION FOR FOOTBALL, PASSION FOR DATA</h1>
-        </div>
-    </footer>
+        </section>
+        
+        <footer class="footer">
+            <h1 class="footer__titulo">You can also find me at:</h1>
+            <a href="#inicio">
+                <img class="btn__vector" src="img/Vector.png" alt="vector">
+            </a>
+            <div class="iconos">
+                <div class="icons">
+                    <a href="https://wa.me/59899045771?text= %20" target="_blank"  class="icon icon--whatsapp">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/augusto-rammauro" target="_blank"  class="icon icon--linkedin">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="https://medium.com/@augustorammauro" target="_blank"  class="icon icon--medium">
+                        <i class="ri-medium-line"></i>
+                    </a>
+                    <a href="https://twitter.com/AugustoRammauro" target="_blank"  class="icon icon--twitter">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="mailto:augustorammauro@gmail.com" target="_blank"  class="icon icon--mail">
+                    <i class="ri-mail-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="fondo__footer">
+                <h1 class="texto__footer">PASSION FOR SOOCER, PASSION FOR DATA</h1>
+            </div>
+        </footer>
+
     <script defer src="main.js"></script>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
