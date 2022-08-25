@@ -426,7 +426,7 @@ header {
 .sub__titulo--agust{
     color: var(--gris);
     font-size: 4.8rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0;
     border: 2px rgba(0,0,0,0);
 }
