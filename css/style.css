@@ -1127,14 +1127,14 @@ header {
     }
     .slick .img1 {
         height: 29rem;
-        width: 47rem;
+        max-width: 44rem;
     }
     .slick .img1:hover {
         height: 29.5rem;
         width: 47.5rem;
     }
     .slick img {
-        width: 33rem;
+        max-width: 33rem;
         height: 33rem;
     }
     .slick img:hover {
@@ -1150,7 +1150,42 @@ header {
         right: 0px;
         margin-right: 2rem;
     }    
-}    
+}  
+@media (min-width: 1980px)  {
+    .Carousel {
+        gap: 4rem;
+    }
+    .slick {
+        margin: 2rem 1rem 15rem;
+        top: 20px;
+        left: 32px;
+    }
+    .slick .img1 {
+        height: 29rem;
+        max-width: 44rem;
+    }
+    .slick .img1:hover {
+        height: 29.5rem;
+        width: 47.5rem;
+    }
+    .slick img {
+        max-width: 33rem;
+        height: 33rem;
+    }
+    .slick img:hover {
+        opacity: 1;
+        width: 33.5rem;
+        height: 33.5rem;
+    } 
+    /**** Imagenes ****/  
+    .slick-list {
+        max-width: 80vw;
+    }   
+    .slick-next {
+        right: 0px;
+        margin-right: 2rem;
+    }    
+}  
 
 
 /**** Proveedores *****/
@@ -1166,14 +1201,6 @@ header {
     text-align: center;
     
 }
-/* .orden__marcas{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-top: 3.5rem;
-    gap: 3rem;
-} */
 .orden__marcas{
     display: flex;
     flex-wrap: wrap;
@@ -1182,27 +1209,24 @@ header {
 }
 
 @media (max-width: 765px) {
-     .titulo__proveedor{
-         font-size: 1.5rem;
-         text-align: left;
-         padding: 2rem;
+    .titulo__proveedor{
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 2rem;
         margin-bottom: 0;
-     }
-     .orden__marcas{
-         /* grid-template-columns: 1fr 1fr 1fr;
-         gap: 2rem;
-         margin-top: 2rem; */
-         gap: 2rem;
-     }
-     .img__provedor{
-         height: 18px;
-     }
-     .container__proveedor{
-         padding-bottom: 2rem;
-     }
-     .img__prov--9{
+    }
+    .orden__marcas{
+        gap: 2rem;
+    }
+    .img__provedor{
+        height: 18px;
+    }
+    .container__proveedor{
+        padding-bottom: 2rem;
+    }
+    .img__prov--9{
         grid-column: 2/3;
-     }
+    }
 }
 
 /***** Sobre Mi ******/
@@ -1229,12 +1253,22 @@ header {
     color: var(--verde);
     font-weight: 700;
     font-size: 2.4rem;
+    line-height: 4rem;
+}
+.parrafo__subtitulo-2{
+    color: var(--verde);
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
+li {
+    list-style-type: disc;
 }
 .parrafo-1{
     font-size: 2.2rem;
     color: var(--blanco);
     font-weight: 400;
-    line-height: 27px;
+    line-height: 26px;
     margin-bottom: 2rem;
 }
 .sobremi__expe{
