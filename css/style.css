@@ -899,6 +899,119 @@ header {
 
     }
 }
+@media (min-width: 375px)  {
+    /**** Imagenes ****/  
+.slick-list {
+    max-width: 68vw;
+}
+.slick {
+    margin: 4rem 1rem 10rem;
+    top: 20px;
+    left: 32px;
+}
+.slick .img1 {
+    height: 9.6rem;
+    width: 17rem;
+}
+.slick .img1:hover {
+    height: 10.1rem;
+    width: 17.5rem;
+}
+.slick img {
+    width: 14.2rem;
+    height: 14.2rem;
+}
+.slick img:hover {
+    opacity: 1;
+    width: 14.7rem;
+    height: 14.7rem;
+} 
+    /**** botones ****/
+.slick-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+.slick-prev {
+    left: 33px;
+}
+.slick-next {
+    margin-right: 0.7rem;
+    right: 16px;
+}   
+.slick__python{
+    left: 36px;
+    margin: 6rem -2rem 8rem 2rem;
+
+}
+}
+@media (min-width: 500px)  {
+    .Carousel {
+        gap: 3rem;
+    }
+    .slick {
+        margin: 1rem 1rem 9rem;
+        top: 20px;
+        left: 32px;
+    }
+        /**** Imagenes ****/  
+    .slick-list {
+        max-width: 70vw;
+    }
+    .slick .img1 {
+        height: 24rem;
+        width: 40rem;
+    }
+    .slick .img1:hover {
+        height: 24.5rem;
+        width: 40.5rem;
+    }
+    .slick img {
+        width: 27rem;
+        height: 27rem;
+    }
+    .slick img:hover {
+        width: 27.5rem;
+        height: 27.5rem;
+    } 
+    .slick-next {
+        right: 0px;
+        margin-right: 2rem;
+    }    
+}
+@media (min-width: 600px)  {
+    .Carousel {
+        gap: 3rem;
+    }
+    .slick {
+        margin: 1rem 1rem 9rem;
+        top: 20px;
+        left: 32px;
+    }
+        /**** Imagenes ****/  
+    .slick-list {
+        max-width: 70vw;
+    }
+    .slick .img1 {
+        height: 24rem;
+        width: 40rem;
+    }
+    .slick .img1:hover {
+        height: 24.5rem;
+        width: 40.5rem;
+    }
+    .slick img {
+        width: 27rem;
+        height: 27rem;
+    }
+    .slick img:hover {
+        width: 27.5rem;
+        height: 27.5rem;
+    } 
+    .slick-next {
+        right: 0px;
+        margin-right: 2rem;
+    }    
+}
 @media (min-width: 765px)  {
     .Carousel {
         gap: 3rem;
