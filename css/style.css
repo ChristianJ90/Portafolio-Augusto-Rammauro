@@ -1281,6 +1281,10 @@ li {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 0;
+    
+}
+.marginRight-15{
+    margin-right: -15rem;
 }
 .marginBottom-0{
     margin-bottom: 0;
@@ -1367,7 +1371,7 @@ li {
     font-size: 1.4rem;
 }
 .img__sobremi-3{
-    width: 508px;
+    width: 488px;
     height: 1105px;
 }
 
@@ -1481,6 +1485,9 @@ li {
      .contenido__sobremiform{
          grid-column: unset;
      }
+     .marginRight-15{
+        margin-right: unset;
+    }
 }
 @media (min-width: 1600px) {
      .img__sobremi-3{
@@ -1489,6 +1496,7 @@ li {
      .sobremi__expe{
          grid-template-columns: 1fr 1fr;
      }
+     
 }
 /**** Servicios ****/
 .servicios {
