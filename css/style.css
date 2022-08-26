@@ -422,13 +422,14 @@ header {
     font-size: 6.4rem;
     font-weight: 700;
     margin-bottom: 0;
+    
 }
 .sub__titulo--agust{
     color: var(--gris);
     font-size: 4.8rem;
     font-weight: 600;
     margin-top: 0;
-    border: 2px rgba(0,0,0,0);
+    -webkit-text-stroke: 1px black;
 }
 
 .img__augusto{
@@ -619,6 +620,7 @@ header {
         font-size: 1.6rem;
         font-weight: 700;
         margin-top: 1rem;
+        margin-left: 2rem;
     }
     .productos__aside--texto {
         text-align: center;
@@ -1387,6 +1389,14 @@ li {
      }
      .parrafo__subtitulo-1{
          font-size: 1.4rem;
+         line-height: 20px;
+     }
+     .parrafo__subtitulo-2{
+         font-size: 13px;
+         line-height: 26px;
+     }
+     ::marker {
+         display: none !important;
      }
      .img__sobremi-2{
          width: 244px;
